@@ -1,0 +1,346 @@
+{
+  "Maharashtra": [
+    {
+      "city": "Ahmednagar",
+      "lat": 19.1627725,
+      "lon": 74.8580243,
+      "status": "cache"
+    },
+    {
+      "city": "Akluj",
+      "lat": 17.8930069,
+      "lon": 75.0204482,
+      "status": "cache"
+    },
+    {
+      "city": "Amravati",
+      "lat": 21.1545412,
+      "lon": 77.6442962,
+      "status": "cache"
+    },
+    {
+      "city": "Akola",
+      "lat": 20.7618123,
+      "lon": 77.1921157,
+      "status": "cache"
+    },
+    {
+      "city": "Barshi",
+      "lat": 18.2341108,
+      "lon": 75.6875109,
+      "status": "cache"
+    },
+    {
+      "city": "Baramati",
+      "lat": 18.2198537,
+      "lon": 74.4534054,
+      "status": "cache"
+    },
+    {
+      "city": "Bhiwandi",
+      "lat": 19.3025562,
+      "lon": 73.0588072,
+      "status": "cache"
+    },
+    {
+      "city": "Chandrapur",
+      "lat": 20.0967555,
+      "lon": 79.5045475,
+      "status": "cache"
+    },
+    {
+      "city": "Indapur",
+      "lat": 18.1125305,
+      "lon": 74.9238654,
+      "status": "cache"
+    },
+    {
+      "city": "Jalgaon",
+      "lat": 20.8428826,
+      "lon": 75.5261246,
+      "status": "cache"
+    },
+    {
+      "city": "Kolhapur",
+      "lat": 16.7028412,
+      "lon": 74.2405329,
+      "status": "cache"
+    },
+    {
+      "city": "Latur",
+      "lat": 18.3553347,
+      "lon": 76.7548997,
+      "status": "cache"
+    },
+    {
+      "city": "Mumbai",
+      "lat": 19.054999,
+      "lon": 72.8692035,
+      "status": "cache"
+    },
+    {
+      "city": "Nanded",
+      "lat": 19.0940088,
+      "lon": 77.4831922,
+      "status": "cache"
+    },
+    {
+      "city": "Pandharpur",
+      "lat": 17.7255921,
+      "lon": 75.3001936,
+      "status": "cache"
+    },
+    {
+      "city": "Pune",
+      "lat": 18.5213738,
+      "lon": 73.8545071,
+      "status": "cache"
+    },
+    {
+      "city": "Phaltan",
+      "lat": 17.9579342,
+      "lon": 74.4142354,
+      "status": "cache"
+    },
+    {
+      "city": "Sangli",
+      "lat": 17.1726928,
+      "lon": 74.5867654,
+      "status": "cache"
+    },
+    {
+      "city": "Sambhaji Nagar",
+      "lat": 20.0224932,
+      "lon": 75.1515442,
+      "status": "cache"
+    },
+    {
+      "city": "Solapur Kondi",
+      "lat": 17.7394288,
+      "lon": 75.8295464,
+      "status": "manual_override"
+    },
+    {
+      "city": "Solapur City",
+      "lat": 17.8499067,
+      "lon": 75.2763203,
+      "status": "cache"
+    },
+    {
+      "city": "Satara City",
+      "lat": 17.6361289,
+      "lon": 74.2982781,
+      "status": "cache"
+    }
+  ],
+  "Chhattisgarh": [
+    {
+      "city": "Raipur",
+      "lat": 21.2380912,
+      "lon": 81.6336993,
+      "status": "cache"
+    },
+    {
+      "city": "Bilaspur",
+      "lat": 22.1638486,
+      "lon": 82.1365923,
+      "status": "cache"
+    },
+    {
+      "city": "Bhilai",
+      "lat": 21.2120677,
+      "lon": 81.3732849,
+      "status": "cache"
+    },
+    {
+      "city": "Durg",
+      "lat": 21.1982964,
+      "lon": 81.4007922,
+      "status": "cache"
+    }
+  ],
+  "Delhi": [
+    {
+      "city": "Alipur",
+      "lat": 28.7973118,
+      "lon": 77.138667,
+      "status": "cache"
+    },
+    {
+      "city": "Naraina",
+      "lat": 28.6264562,
+      "lon": 77.1349668,
+      "status": "cache"
+    },
+    {
+      "city": "Karol Bagh",
+      "lat": 28.6529982,
+      "lon": 77.1890227,
+      "status": "cache"
+    },
+    {
+      "city": "Bawana",
+      "lat": 28.79966,
+      "lon": 77.0328847,
+      "status": "cache"
+    },
+    {
+      "city": "Mangolpuri",
+      "lat": 28.6836984,
+      "lon": 77.0914827,
+      "status": "cache"
+    },
+    {
+      "city": "Gandhi Nagar",
+      "lat": 28.6587904,
+      "lon": 77.2715878,
+      "status": "cache"
+    },
+    {
+      "city": "Shadara",
+      "lat": 28.6758661,
+      "lon": 77.2985078,
+      "status": "manual_override"
+    },
+    {
+      "city": "Dayabasti",
+      "lat": 28.6671217,
+      "lon": 77.17119,
+      "status": "cache"
+    },
+    {
+      "city": "Kamla Market",
+      "lat": 28.6786683,
+      "lon": 77.2072566,
+      "status": "cache"
+    },
+    {
+      "city": "Kashmere Gate",
+      "lat": 28.6668141,
+      "lon": 77.2290549,
+      "status": "cache"
+    },
+    {
+      "city": "Sadar Bazar",
+      "lat": 28.658087,
+      "lon": 77.2170087,
+      "status": "cache"
+    },
+    {
+      "city": "Wazirpur",
+      "lat": 28.6800843,
+      "lon": 77.1702212,
+      "status": "cache"
+    }
+  ],
+  "Punjab": [
+    {
+      "city": "Ludhiana",
+      "lat": 30.9090157,
+      "lon": 75.851601,
+      "status": "cache"
+    }
+  ],
+  "Uttar Pradesh": [
+    {
+      "city": "UP Border",
+      "lat": 26.8467,
+      "lon": 80.9462,
+      "status": "manual_override"
+    },
+    {
+      "city": "Meerut",
+      "lat": 29.0018557,
+      "lon": 77.7679671,
+      "status": "cache"
+    },
+    {
+      "city": "Noida",
+      "lat": 28.5706333,
+      "lon": 77.3272147,
+      "status": "cache"
+    },
+    {
+      "city": "Ghaziabad",
+      "lat": 28.7749966,
+      "lon": 77.4586967,
+      "status": "cache"
+    },
+    {
+      "city": "Phulkua",
+      "lat": 28.675,
+      "lon": 77.42,
+      "status": "manual_override"
+    }
+  ],
+  "Haryana": [
+    {
+      "city": "Faridabad",
+      "lat": 28.4031478,
+      "lon": 77.3105561,
+      "status": "cache"
+    },
+    {
+      "city": "Gurgaon",
+      "lat": 28.4646148,
+      "lon": 77.0299194,
+      "status": "cache"
+    },
+    {
+      "city": "Panipath",
+      "lat": 29.3912753,
+      "lon": 76.9771675,
+      "status": "cache"
+    },
+    {
+      "city": "Sonipat",
+      "lat": 28.9953758,
+      "lon": 77.0233627,
+      "status": "cache"
+    },
+    {
+      "city": "Karnal",
+      "lat": 29.7255766,
+      "lon": 76.9106924,
+      "status": "cache"
+    }
+  ],
+  "Gujarat": [
+    {
+      "city": "Rajkot",
+      "lat": 22.3053263,
+      "lon": 70.8028377,
+      "status": "cache"
+    },
+    {
+      "city": "Shapar",
+      "lat": 22.1587575,
+      "lon": 70.7979969,
+      "status": "cache"
+    },
+    {
+      "city": "Matoda",
+      "lat": 22.8838171,
+      "lon": 72.3995579,
+      "status": "cache"
+    },
+    {
+      "city": "Jamnagar",
+      "lat": 22.4732415,
+      "lon": 70.0552102,
+      "status": "cache"
+    },
+    {
+      "city": "Junagarh",
+      "lat": 21.25,
+      "lon": 70.333333,
+      "status": "cache"
+    },
+    {
+      "city": "Morbi",
+      "lat": 22.8003959,
+      "lon": 70.886232,
+      "status": "cache"
+    }
+  ]
+}

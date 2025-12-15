@@ -1,0 +1,223 @@
+/*
+Deep Logistics - PROPER CSS Overhaul
+Color Palette:
+- Primary Blue: #1a73e8 (A more modern, Google-like blue)
+- Accent Orange: #ff7f50 (Coral, a bit softer than pure orange)
+- Neutral Background: #f8f9fa
+- Dark Text: #212529
+- White: #ffffff
+- Subtle Shadow: rgba(0, 0, 0, 0.075)
+*/
+
+/* --- Global Styles & Typography --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #212529;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Redefining Bootstrap's primary color */
+.text-primary, .text-primary-hover:hover {
+    color: #1a73e8 !important;
+}
+
+.bg-primary {
+    background-color: #1a73e8 !important;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+    font-weight: 600;
+    border-radius: 50px; /* Pill-shaped buttons */
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #1662c8;
+    border-color: #1662c8;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(26, 115, 232, 0.3);
+}
+
+.border-bottom {
+    border-color: #1a73e8 !important;
+}
+
+
+/* --- Topbar & Navbar --- */
+.container-fluid.bg-dark {
+    background-color: #212529 !important;
+}
+
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand h1 {
+    transition: color 0.3s ease;
+}
+.navbar-brand:hover h1 {
+    color: #1662c8 !important;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #343a40 !important;
+    padding: 0.8rem 1rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navbar-nav .nav-link:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1a73e8;
+    transition: width .3s;
+    position: absolute;
+    bottom: 5px;
+    left: 1rem;
+}
+
+.navbar-nav .nav-link:hover:after,
+.navbar-nav .nav-link.active:after {
+    width: calc(100% - 2rem);
+}
+
+/* 
+/* --- Jumbotron / Header --- */
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    background-image: url("/static/main/images/Home1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.jumbotron video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+} */
+
+
+/* --- General Section Styling --- */
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.section-title h6 {
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.section-title h1 {
+    font-weight: 800;
+}
+
+/* --- Service & About Cards --- */
+.card-feature {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    transition: all 0.4s ease-in-out;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.card-feature .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    background: -webkit-linear-gradient(45deg, #1a73e8, #ff7f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* --- Footer --- */
+.footer {
+    background: #212529;
+    color: #adb5bd;
+}
+
+.footer .text-primary {
+    color: #ff7f50 !important; /* Use accent color in footer */
+}
+
+.footer .btn-social {
+    border-radius: 50%;
+    border: 1px solid #adb5bd;
+    color: #adb5bd;
+    transition: all 0.3s ease;
+}
+
+.footer .btn-social:hover {
+    background: #ff7f50;
+    color: white;
+    border-color: #ff7f50;
+}
+
+.footer a {
+    color: #adb5bd;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}

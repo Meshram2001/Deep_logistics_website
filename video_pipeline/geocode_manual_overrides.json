@@ -1,0 +1,22 @@
+{
+  "Uttar Pradesh::UP Border": {
+    "lat": 26.8467,
+    "lon": 80.9462,
+    "note": "Approximate: uses Lucknow as a UP reference point. Replace with a more accurate 'border' location if needed."
+  },
+  "Maharashtra::Solapur Kondi": {
+    "lat": 17.7394288,
+    "lon": 75.8295464,
+    "note": "Resolved as Kondi, Solapur North (near Solapur)."
+  },
+  "Delhi::Shadara": {
+    "lat": 28.6758661,
+    "lon": 77.2985078,
+    "note": "Resolved as Shahdara, Delhi. (Your input was 'Shadara'.)"
+  },
+  "Uttar Pradesh::Phulkua": {
+    "lat": 28.6750,
+    "lon": 77.4200,
+    "note": "Placeholder near Ghaziabad/Noida. Please provide correct spelling/pincode to place this pin accurately."
+  }
+}

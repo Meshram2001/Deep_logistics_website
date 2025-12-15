@@ -1,0 +1,119 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Track Your Consignment{% endblock %}
+
+{% block content %}
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Track Your Consignment</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="{% url 'home' %}">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Track</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Tracking Form Start -->
+<div class="container-fluid" style="padding: 70px 0; background: #f4f7fc;">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center" style="margin-bottom: 40px;">
+            <h6 style="
+                color: #007bff; 
+                text-transform: uppercase; 
+                letter-spacing: 2px;
+                font-weight: 700;
+            ">
+                Tracking
+            </h6>
+
+            <h1 style="
+                font-size: 32px; 
+                font-weight: 800; 
+                color: #222;
+            ">
+                Know Your Consignment Status
+            </h1>
+        </div>
+
+        <!-- Card -->
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+
+                <div style="
+                    background: #ffffff;
+                    padding: 35px;
+                    border-radius: 18px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                "
+                onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.18)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.12)';"
+                >
+                    
+                    <p class="text-center" style="font-size: 16px; color: #555;">
+                        Enter your consignment number below to track its status in real-time.
+                    </p>
+
+                    <!-- Form -->
+                    <form id="tracking-form" style="margin-top: 25px;">
+                        <div style="
+                            display: flex; 
+                            gap: 10px; 
+                            align-items: center;
+                        ">
+                            <input 
+                                type="text" 
+                                id="consignment_number" 
+                                placeholder="Enter Consignment Number" 
+                                required
+                                style="
+                                    flex: 1;
+                                    padding: 15px 18px;
+                                    border: 2px solid #e0e6ed;
+                                    border-radius: 10px;
+                                    outline: none;
+                                    transition: 0.3s;
+                                "
+                                onfocus="this.style.borderColor='#007bff'"
+                                onblur="this.style.borderColor='#e0e6ed'"
+                            >
+
+                            <button type="submit"
+                                style="
+                                    background: linear-gradient(135deg, #007bff, #0056d6);
+                                    padding: 14px 25px;
+                                    color: #fff;
+                                    border: none;
+                                    border-radius: 10px;
+                                    font-weight: 600;
+                                    cursor: pointer;
+                                    transition: 0.3s;
+                                "
+                                onmouseover="this.style.opacity='0.9'"
+                                onmouseout="this.style.opacity='1'"
+                            >
+                                Track
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Result -->
+                    <div id="tracking-result" style="margin-top: 25px;"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <!-- Tracking Form End -->
+{% endblock %}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Deep Logistics - Redefining Time{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Deep Logistics - Logistics, Transportation, Cargo, India" name="keywords">
+    <meta content="Deep Logistics offers seamless, secure, and dependable logistics solutions across India. FTL, PTL, Air, Rail, and Surface Cargo services." name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'main/images/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts (Poppins already loaded by me) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (using my version 6) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet (using my version 5) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+
+    <!-- GSAP Core -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt me-2"></i>+91 7758990533</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope me-2"></i>deeplogisticsnagpur@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-white px-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="text-white px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-white px-2" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="text-white ps-2" href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="{% url 'home' %}" class="navbar-brand ms-lg-3">
+            <h1 class="m-0">
+                <img 
+                    src="/static/main/images/Main_logo.png" 
+                    alt="Deep Logistics"
+                    style="
+                        height: 80px;
+                        width: auto;
+                        vertical-align: middle;
+                    ">
+            </h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0" style="
+                display: flex;
+                gap: 28px;
+                align-items: center;
+            ">
+
+                <a href="{% url 'home' %}"
+                class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+                style="
+                        font-weight: 600;
+                        color: #333;
+                        position: relative;
+                        padding: 6px 0;
+                        transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0d6efd'"
+                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                Home
+                </a>
+
+                <a href="{% url 'about' %}"
+                class="nav-item nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}"
+                style="
+                        font-weight: 600;
+                        color: #333;
+                        position: relative;
+                        padding: 6px 0;
+                        transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0d6efd'"
+                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                About
+                </a>
+
+                <a href="{% url 'service' %}"
+                class="nav-item nav-link {% if request.resolver_match.url_name == 'service' %}active{% endif %}"
+                style="
+                        font-weight: 600;
+                        color: #333;
+                        position: relative;
+                        padding: 6px 0;
+                        transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0d6efd'"
+                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                Service
+                </a>
+
+                <a href="{% url 'contact' %}"
+                class="nav-item nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
+                style="
+                        font-weight: 600;
+                        color: #333;
+                        position: relative;
+                        padding: 6px 0;
+                        transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0d6efd'"
+                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                Contact
+                </a>
+
+                <a href="{% url 'join_with_us' %}"
+                class="nav-item nav-link {% if request.resolver_match.url_name == 'join_with_us' %}active{% endif %}"
+                style="
+                        font-weight: 600;
+                        color: #333;
+                        position: relative;
+                        padding: 6px 0;
+                        transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0d6efd'"
+                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                Join With Us
+                </a>
+
+                <a href="{% url 'know_your_consignment' %}"
+                class="nav-item nav-link {% if request.resolver_match.url_name == 'know_your_consignment' %}active{% endif %}"
+                style="
+                        font-weight: 600;
+                        color: #333;
+                        position: relative;
+                        padding: 6px 0;
+                        transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0d6efd'"
+                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                Track Consignment
+                </a>
+
+            </div>
+
+            <a href="{% url 'contact' %}" class="btn btn-primary py-2 px-4 d-none d-lg-block" style="text-decoration:none;">
+    
+                <button
+                    style="
+                        position: relative;
+                        width:150px;
+                        height:55px;
+                        border-radius:45px;
+                        border:none;
+                        background:rgb(151,95,255);
+                        color:white;
+                        cursor:pointer;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        font-weight:600;
+                        box-shadow:
+                            inset 0px 10px 10px rgb(210,187,253),
+                            0px 5px 10px rgba(5,5,5,0.212),
+                            inset 0px -10px 10px rgb(124,54,255);
+                        overflow:hidden;
+                    "
+                    onmouseover="this.style.animation='jello 0.9s both'"
+                    onmouseout="this.style.animation='none'"
+                >
+                    Get A Quote
+
+                    <!-- TOP LIGHT LINE -->
+                    <span style="
+                        position:absolute;
+                        top:7px;
+                        width:70%;
+                        height:2px;
+                        background:rgba(255,255,255,0.6);
+                        filter:blur(1px);
+                        border-radius:50%;
+                    "></span>
+
+                    <!-- BOTTOM LIGHT LINE -->
+                    <span style="
+                        position:absolute;
+                        bottom:7px;
+                        width:70%;
+                        height:2px;
+                        background:rgba(255,255,255,0.15);
+                        filter:blur(1px);
+                        border-radius:50%;
+                    "></span>
+
+                </button>
+
+            </a>
+
+            <!-- INLINE KEYFRAMES (REQUIRED ONCE) -->
+            <style>
+            @keyframes jello {
+            0% { transform: scale3d(1,1,1); }
+            30% { transform: scale3d(1.25,0.75,1); }
+            40% { transform: scale3d(0.75,1.25,1); }
+            50% { transform: scale3d(1.15,0.85,1); }
+            65% { transform: scale3d(0.95,1.05,1); }
+            75% { transform: scale3d(1.05,0.95,1); }
+            100% { transform: scale3d(1,1,1); }
+            }
+            </style>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer Start -->
+    <div style="
+        background: linear-gradient(135deg,#0b1c25,#102a3a,#163b52);
+        color:white;
+        margin-top:60px;
+        padding:60px 30px;
+        box-shadow: inset 0 10px 40px rgba(0,0,0,0.6);
+    ">
+        <div class="row pt-4">
+            <div class="col-lg-7 col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h3 style="
+                            color:#4da3ff;
+                            font-weight:700;
+                            margin-bottom:20px;
+                            position:relative;
+                        ">
+                            Get In Touch
+                            <span style="
+                                display:block;
+                                width:40px;
+                                height:3px;
+                                background:#4da3ff;
+                                margin-top:8px;
+                                border-radius:10px;
+                            "></span>
+                        </h3>
+
+                        <p style="opacity:0.9;">
+                            <i class="fa fa-map-marker-alt me-2"></i>
+                            Plot No.1, Sai Managal, Co-Op. Housing Society, Jaitala, Nagpur-440036
+                        </p>
+                        <p style="opacity:0.9;">
+                            <i class="fa fa-phone-alt me-2"></i>+91 7758990533
+                        </p>
+                        <p style="opacity:0.9;">
+                            <i class="fa fa-envelope me-2"></i>deeplogisticsnagpur@gmail.com
+                        </p>
+
+                        <div style="display:flex; gap:12px; margin-top:20px;">
+                            <a href="#" style="
+                                width:42px;height:42px;
+                                border-radius:50%;
+                                border:1px solid rgba(255,255,255,0.3);
+                                display:flex;align-items:center;justify-content:center;
+                                color:white;
+                                transition:0.3s;
+                            " onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
+                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                            <a href="#" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:white;transition:0.3s;"
+                            onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
+                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:white;transition:0.3s;"
+                            onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
+                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="#" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:white;transition:0.3s;"
+                            onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
+                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <h3 style="color:#4da3ff;font-weight:700;margin-bottom:20px;">
+                            Quick Links
+                            <span style="display:block;width:40px;height:3px;background:#4da3ff;margin-top:8px;border-radius:10px;"></span>
+                        </h3>
+
+                        <div style="display:flex;flex-direction:column;gap:10px;">
+                            <a href="{% url 'home' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
+                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
+                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                                <i class="fa fa-angle-right me-2"></i>Home
+                            </a>
+
+                            <a href="{% url 'about' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
+                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
+                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                                <i class="fa fa-angle-right me-2"></i>About Us
+                            </a>
+
+                            <a href="{% url 'service' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
+                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
+                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                                <i class="fa fa-angle-right me-2"></i>Our Services
+                            </a>
+
+                            <a href="{% url 'join_with_us' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
+                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
+                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                                <i class="fa fa-angle-right me-2"></i>Join With Us
+                            </a>
+
+                            <a href="{% url 'contact' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
+                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
+                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                                <i class="fa fa-angle-right me-2"></i>Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mb-5">
+                <h3 style="color:#4da3ff;font-weight:700;margin-bottom:20px;">
+                    Newsletter
+                    <span style="display:block;width:40px;height:3px;background:#4da3ff;margin-top:8px;border-radius:10px;"></span>
+                </h3>
+                <p style="opacity:0.9;">
+                    Stay updated with our latest news and offers in the logistics industry.
+                </p>
+
+                <div style="display:flex;">
+                    <input type="text" placeholder="Your Email Address" style="
+                        flex:1;
+                        padding:18px 22px;
+                        border:none;
+                        border-radius:30px 0 0 30px;
+                        outline:none;
+                    ">
+                    <button style="
+                        padding:0 30px;
+                        border:none;
+                        background:#4da3ff;
+                        color:white;
+                        border-radius:0 30px 30px 0;
+                        transition:0.3s;
+                    "
+                    onmouseover="this.style.boxShadow='0 0 15px #4da3ff'"
+                    onmouseout="this.style.boxShadow='none'">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="
+        background:#07161f;
+        color:white;
+        padding:18px 30px;
+        box-shadow:0 -5px 25px rgba(0,0,0,0.6);
+    ">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-md-start">
+                &copy; {% now "Y" %} <strong>Deep Logistics</strong>. All Rights Reserved.
+            </div>
+            <div class="col-lg-6 text-center text-md-end">
+                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">Privacy</a>
+                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">Terms</a>
+                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">FAQs</a>
+                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">Help</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Placeholder for easing.min.js and waypoints.min.js - not adding external CDN for now -->
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+
+</html>
