@@ -1,0 +1,4 @@
+google.generativeai
+pymupdf
+django
+gunicorn
