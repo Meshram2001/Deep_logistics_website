@@ -2,8 +2,8 @@
 This folder contains scripts to help you generate a cinematic 3D India logistics network video (MP4) for the website home page.
 ## What you already have in the website
 The home page video section is already wired to:
-- `main/static/main/videos/Deep_Record.mp4`
-After you render the final hero video, replace that file (keep the same name) to show it on the home page.
+- `main/static/main/videos/india_network_hero.mp4`
+After you render the final hero video, replace that file to show it on the home page.
 ## Step 1: Install Python deps (for geocoding)
 ```powershell
 pip install -r video_pipeline/requirements.txt
@@ -39,9 +39,9 @@ Open that `.blend` in Blender UI and do the cinematic tuning:
 - floating 3D labels
 - lighting for soft global illumination / elegant contrast
 ## Render settings (recommended)
-- Resolution: 3840x2160 (4K)
+- Resolution: 1920x1080 (hero-friendly; you can switch to 4K if you want)
 - FPS: 30
-- Duration: 12–18 seconds (loop-friendly)
+- Duration: ~16 seconds (loop-friendly)
 - Output: MP4 (H.264), no audio
 ## Step 5: Render MP4 and put it into the website
 After you are happy with the scene in Blender UI, render to the website path:
@@ -49,5 +49,5 @@ After you are happy with the scene in Blender UI, render to the website path:
 powershell -ExecutionPolicy Bypass -File video_pipeline/run_blender_render.ps1 -BlenderExe "C:\\FULL\\PATH\\TO\\blender.exe"
 ```
 Output:
-- `main/static/main/videos/Deep_Record.mp4`
+- `main/static/main/videos/india_network_hero.mp4`
 Then refresh the home page.

@@ -1,6 +1,6 @@
 param(
   [string]$BlenderExe = "",
-  [string]$Out = "main/static/main/videos/Deep_Record.mp4"
+  [string]$Out = "main/static/main/videos/india_network_hero.mp4"
 )
 
 if (-not $BlenderExe) {

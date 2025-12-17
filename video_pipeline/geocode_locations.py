@@ -48,6 +48,11 @@ def normalize_city_for_query(city: str) -> str:
     if city.lower() == "up border":
         # Not a city; we approximate it to Uttar Pradesh centroid later.
         return "Uttar Pradesh"
+
+    # Your list says "Phulkua" but the actual place is commonly spelled "Pilkhuwa" (Hapur, UP).
+    if city.lower() == "phulkua":
+        return "Pilkhuwa"
+
     return city
 
 
