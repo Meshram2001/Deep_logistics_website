@@ -1,0 +1,420 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Contact Deep Logistics{% endblock %}
+
+{% block content %}
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Contact Us</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="{% url 'home' %}">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Contact</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+<div class="container" style="padding:40px 0; max-width:1200px; margin:auto;">
+
+    <!-- CONTACT HEADING -->
+    <h6 style="color:#0d6efd; text-transform:uppercase; font-weight:bold;">Contact Us</h6>
+    <h1 style="font-weight:800; margin-bottom:25px;">Contact For Any Queries</h1>
+
+    <!-- FLEX BOX -->
+    <div style="
+        display:flex;
+        gap:25px;
+        align-items:flex-start;
+        justify-content:space-between;
+        width:100%;
+    ">
+
+        <!-- LEFT FORM -->
+        <div style="
+            width:48%;
+            background:#ffffff;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+        ">
+            <form id="contactForm">
+                {% csrf_token %}
+
+                <label style="font-weight:700;">Your Name</label>
+                <input type="text" style="
+                    width:100%; padding:10px; border-radius:6px;
+                    border:1px solid #ccc; margin-bottom:12px;
+                ">
+
+                <label style="font-weight:700;">Your Email</label>
+                <input type="email" style="
+                    width:100%; padding:10px; border-radius:6px;
+                    border:1px solid #ccc; margin-bottom:12px;
+                ">
+
+                <label style="font-weight:700;">Subject</label>
+                <input type="text" style="
+                    width:100%; padding:10px; border-radius:6px;
+                    border:1px solid #ccc; margin-bottom:12px;
+                ">
+
+                <label style="font-weight:700;">Message</label>
+                <textarea rows="3" style="
+                    width:100%; padding:10px; border-radius:6px;
+                    border:1px solid #ccc; margin-bottom:15px;
+                "></textarea>
+
+                <button style="
+                    background:#0d6efd; border:none; color:white;
+                    padding:10px 22px; border-radius:6px;
+                    font-weight:700; cursor:pointer;
+                ">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- RIGHT MAP -->
+        <div style="
+            width:48%;
+        ">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                style="
+                    width:100%;
+                    height:450px;
+                    border:0;
+                    border-radius:12px;
+                    box-shadow:0px 4px 15px rgba(0,0,0,0.25);
+                "
+                allowfullscreen="">
+            </iframe>
+        </div>
+
+    </div>
+
+    <!-- ADDRESS SECTION BELOW FLEX -->
+<div style="
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    font-family: Arial, sans-serif;
+">
+
+    <!-- REGISTERED OFFICE -->
+    <div style="margin-bottom: 15px;">
+        <h4 style="
+            margin: 0 0 8px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffd966;
+        ">
+            📍 Registered Office
+        </h4>
+
+        <p style="margin: 0; line-height: 1.6;">
+            Plot No.1, Sai Mangal, Co-Op. Housing Society, Jaitala, Nagpur-440036<br>
+            📞 <strong>+91 7758990533</strong> &nbsp;|&nbsp;
+            ✉️ <strong>deeplogisticsnagpur@gmail.com</strong>
+        </p>
+    </div>
+
+    <!-- DIVIDER -->
+    <div style="
+        height: 1px;
+        background: rgba(255,255,255,0.3);
+        margin: 15px 0;
+    "></div>
+
+    <!-- WADI OFFICE -->
+    <div>
+        <h4 style="
+            margin: 0 0 8px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffd966;
+        ">
+            📍 Wadi Office
+        </h4>
+
+        <p style="margin: 0; line-height: 1.6;">
+            Plot 7, 1st Floor, Pande Layout, Khadgaon Road, Wadi, Nagpur-440023<br>
+            📞 <strong>+91 7758990534</strong>
+        </p>
+    </div>
+
+</div>
+
+
+</div>
+
+
+<!-- Cites Along with States -->
+
+
+<div style="background:#f2f4ff; padding:50px 0; margin-top:20px;">
+
+    <h2 style="
+        text-align:center; 
+        font-weight:800; 
+        margin-bottom:35px;
+        color:#243b6b;
+        letter-spacing:1px;
+    ">
+        Our Service Locations
+    </h2>
+
+    <div style="
+        display:flex; 
+        justify-content:center; 
+        gap:35px; 
+        flex-wrap:wrap;
+        max-width:1200px;
+        margin:auto;
+    ">
+
+        <!-- CARD TEMPLATE -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        " 
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+
+            <div style="
+                background:#ffd451; 
+                color:#7a1a00;
+                font-weight:800; 
+                padding:7px 12px; 
+                border-radius:6px;
+                text-align:center; 
+                margin-bottom:12px;
+            ">
+                MAHARASHTRA
+            </div>
+
+            <p style="line-height:1.6; color:#444;">
+                Ahmednagar<br>Akluj<br>Amravati<br>Akola<br>Barshi<br>Bhiwandi<br>Chandrapur<br>Jalgaon<br>Kolhapur<br>Latur<br>Mumbai<br>Nanded<br>Pandharpur<br>Pune<br>Phaltan<br>Satara City
+            </p>
+        </div>
+
+        <!-- CHATTISGARH -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px; 
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                CHATTISGARH
+            </div>
+            <p style="line-height:1.6; color:#444;">Raipur<br>Bilaspur<br>Bhilai<br>Durg</p>
+        </div>
+
+        <!-- UTTAR PRADESH -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px; 
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                UTTAR PRADESH
+            </div>
+            <p style="line-height:1.6; color:#444;">UP Border<br>Meerut<br>Noida<br>Ghaziabad<br>Philkhua</p>
+        </div>
+
+        <!-- DELHI & NCR -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px;
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                DELHI & NCR
+            </div>
+            <p style="line-height:1.6; color:#444;">
+                Alipur<br>Narina<br>Karolbagh<br>Bawana<br>Mangolpuri<br>Gandhi Nagar<br>Shadara<br>Kashmere Gate<br>Wazirpur
+            </p>
+        </div>
+
+        <!-- HARYANA -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px;
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                HARYANA
+            </div>
+            <p style="line-height:1.6; color:#444;">Faridabad<br>Gurgaon<br>Panipat<br>Sonipat<br>Karnal</p>
+        </div>
+
+        <!-- GUJARAT -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px;
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                GUJARAT
+            </div>
+            <p style="line-height:1.6; color:#444;">Rajkot<br>Shapar<br>Matoda<br>Jamnagar<br>Junagadh<br>Morbi</p>
+        </div>
+
+        <!-- PUNJAB -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px;
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                PUNJAB
+            </div>
+            <p style="line-height:1.6; color:#444;">Ludhiana</p>
+        </div>
+
+        <!-- Karnataka -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px; 
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                Karnataka
+            </div>
+            <p style="line-height:1.6; color:#444;">Bangalore</p>
+        </div>
+
+        <!-- Telengana -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px; 
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                Telengana
+            </div>
+            <p style="line-height:1.6; color:#444;">Hydrabaad</p>
+        </div>
+
+        <!-- Tamil Nadu -->
+        <div style="
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+            transition:0.3s;
+        "
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0px 8px 18px rgba(0,0,0,0.15)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(0,0,0,0.1)';"
+        >
+            <div style="
+                background:#ffd451; color:#7a1a00;
+                font-weight:800; padding:7px 12px; 
+                border-radius:6px;
+                text-align:center; margin-bottom:12px;">
+                Tamil Nadu
+            </div>
+            <p style="line-height:1.6; color:#444;">Chennai</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!-- Contact End -->
+{% endblock %}

@@ -1,0 +1,203 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Join Our Team{% endblock %}
+
+{% block content %}
+
+<!-- HEADER START -->
+<div class="jumbotron jumbotron-fluid mb-5">
+    <div class="container text-center py-5">
+        <h1 class="text-white display-3">Join With Us</h1>
+        <div class="d-inline-flex align-items-center text-white">
+            <p class="m-0">
+                <a class="text-white" href="{% url 'home' %}">Home</a>
+            </p>
+            <i class="fa fa-circle px-3"></i>
+            <p class="m-0">Join With Us</p>
+        </div>
+    </div>
+</div>
+<!-- HEADER END -->
+
+<!-- JOIN FORM SECTION START -->
+<div class="container-fluid"
+     style="
+        padding:70px 0;
+        background:white
+     ">
+
+    <div class="container">
+
+        <!-- HEADING -->
+        <div class="text-center pb-5">
+            <h6 style="
+                color:#0d6efd;
+                text-transform:uppercase;
+                font-weight:800;
+                letter-spacing:1px;
+            ">
+                Partner With Us
+            </h6>
+
+            <h1 style="
+                font-weight:900;
+                color:#243b6b;
+                max-width:900px;
+                margin:auto;
+                line-height:1.4;
+            ">
+                We are looking for Agents, Vendors, Fleet Owners & Business Associates
+            </h1>
+        </div>
+
+        <!-- ROW -->
+        <div class="row align-items-center">
+
+            <!-- LEFT IMAGE SECTION -->
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div style="
+                    background:white;
+                    border-radius:18px;
+                    padding:30px;
+                    text-align:center;
+                    box-shadow:0px 10px 30px rgba(0,0,0,0.12);
+                ">
+
+                    <img src="{% static 'main/images/join_us.png' %}"
+                         alt="Join Deep Logistics"
+                         style="
+                            width:100%;
+                            max-width:470px;
+                            height:430px;
+                            border-radius:14px;
+                            margin-bottom:20px;
+                         ">
+
+                    <h3 style="
+                        font-weight:800;
+                        color:#243b6b;
+                        margin-bottom:12px;
+                    ">
+                        Grow With Deep Logistics
+                    </h3>
+
+                    <p style="
+                        color:#555;
+                        font-size:15px;
+                        line-height:1.7;
+                        margin:0;
+                    ">
+                        Join our fast-growing logistics network and unlock
+                        new opportunities across India. We collaborate with
+                        agents, vendors, fleet owners and logistics partners.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- RIGHT FORM SECTION -->
+            <div class="col-lg-7">
+
+                <div style="
+                    padding:35px;
+                    border-radius:18px;
+                    background:white;
+                    box-shadow:0px 10px 30px rgba(0,0,0,0.15);
+                    transition:0.3s;
+                "
+                onmouseover="this.style.transform='translateY(-5px)';
+                             this.style.boxShadow='0px 15px 40px rgba(0,0,0,0.25)'"
+                onmouseout="this.style.transform='translateY(0)';
+                            this.style.boxShadow='0px 10px 30px rgba(0,0,0,0.15)'">
+
+                    <form method="post">
+                        {% csrf_token %}
+
+                        <!-- NAME -->
+                        <input type="text" name="name" placeholder="Your Full Name" required
+                               style="width:100%; padding:14px 18px; margin-bottom:15px;
+                                      border:1px solid #ccd7ff; border-radius:10px;
+                                      font-size:15px;"
+                               onfocus="this.style.border='1px solid #0d6efd'"
+                               onblur="this.style.border='1px solid #ccd7ff'">
+
+                        <!-- EMAIL -->
+                        <input type="email" name="email" placeholder="Your Email Address" required
+                               style="width:100%; padding:14px 18px; margin-bottom:15px;
+                                      border:1px solid #ccd7ff; border-radius:10px;
+                                      font-size:15px;"
+                               onfocus="this.style.border='1px solid #0d6efd'"
+                               onblur="this.style.border='1px solid #ccd7ff'">
+
+                        <!-- PHONE -->
+                        <input type="text" name="phone" placeholder="Your Phone Number" required
+                               style="width:100%; padding:14px 18px; margin-bottom:15px;
+                                      border:1px solid #ccd7ff; border-radius:10px;
+                                      font-size:15px;"
+                               onfocus="this.style.border='1px solid #0d6efd'"
+                               onblur="this.style.border='1px solid #ccd7ff'">
+
+                        <!-- CITY -->
+                        <input type="text" name="city" placeholder="Your City" required
+                               style="width:100%; padding:14px 18px; margin-bottom:15px;
+                                      border:1px solid #ccd7ff; border-radius:10px;
+                                      font-size:15px;"
+                               onfocus="this.style.border='1px solid #0d6efd'"
+                               onblur="this.style.border='1px solid #ccd7ff'">
+
+                        <!-- SELECT -->
+                        <select name="partner_type" required
+                                style="width:100%; padding:14px 18px; margin-bottom:15px;
+                                       border:1px solid #ccd7ff; border-radius:10px;
+                                       font-size:15px; background:white;"
+                                onfocus="this.style.border='1px solid #0d6efd'"
+                                onblur="this.style.border='1px solid #ccd7ff'">
+                            <option selected disabled>I am a...</option>
+                            <option>Agent</option>
+                            <option>Vendor</option>
+                            <option>Fleet Owner</option>
+                            <option>Business Associate</option>
+                            <option>Company</option>
+                        </select>
+
+                        <!-- TEXTAREA -->
+                        <textarea name="experience" rows="3"
+                                  placeholder="Tell us about your experience (optional)"
+                                  style="width:100%; padding:14px 18px; margin-bottom:20px;
+                                         border:1px solid #ccd7ff; border-radius:10px;
+                                         font-size:15px; resize:none;"
+                                  onfocus="this.style.border='1px solid #0d6efd'"
+                                  onblur="this.style.border='1px solid #ccd7ff'"></textarea>
+
+                        <!-- BUTTON -->
+                        <button type="submit"
+                                style="
+                                    width:100%;
+                                    background:#0d6efd;
+                                    border:none;
+                                    color:white;
+                                    padding:15px;
+                                    border-radius:10px;
+                                    font-size:17px;
+                                    font-weight:700;
+                                    letter-spacing:0.5px;
+                                    cursor:pointer;
+                                    transition:0.3s;
+                                "
+                                onmouseover="this.style.background='#0b5ed7'"
+                                onmouseout="this.style.background='#0d6efd'">
+                            Submit Application
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- JOIN FORM SECTION END -->
+
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Track Your Consignment{% endblock %}
+
+{% block content %}
+
+<!-- HEADER START -->
+<div class="jumbotron jumbotron-fluid mb-5">
+    <div class="container text-center py-5">
+        <h1 class="text-white display-3">Track Your Consignment</h1>
+        <div class="d-inline-flex align-items-center text-white">
+            <p class="m-0"><a class="text-white" href="{% url 'home' %}">Home</a></p>
+            <i class="fa fa-circle px-3"></i>
+            <p class="m-0">Track</p>
+        </div>
+    </div>
+</div>
+<!-- HEADER END -->
+
+<!-- TRACKING + VIDEO SECTION -->
+<div class="container-fluid" style="padding:80px 0; background:white; margin-left:-40px;">
+    <div class="container">
+
+  
+
+        <div class="row align-items-center">
+
+            <!-- LEFT : TRACKING FORM -->
+            <div class="col-lg-6 mt-10" >
+
+                <div style="
+                    background:#ffffff;
+                    padding:60px;
+                    border-radius:20px;
+                    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+                    transition:0.3s;
+                "
+                onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(0,0,0,0.18)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.12)'">
+
+                    <h3 style="font-weight:800; margin-bottom:15px; color:#243b6b;">
+                        Track Your Consignment
+                    </h3>
+
+                    <p style="color:#555; margin-bottom:25px;">
+                        Enter your consignment number to get real-time shipment updates.
+                    </p>
+
+                    <form id="tracking-form">
+                        <div style="display:flex; gap:10px;">
+                            <input type="text" placeholder="Enter Consignment Number" required
+                                style="
+                                    flex:1;
+                                    padding:15px 18px;
+                                    border:2px solid #e0e6ed;
+                                    border-radius:10px;
+                                    outline:none;
+                                    transition:0.3s;
+                                "
+                                onfocus="this.style.borderColor='#007bff'"
+                                onblur="this.style.borderColor='#e0e6ed'">
+
+                            <button type="submit"
+                                style="
+                                    background:linear-gradient(135deg,#007bff,#0056d6);
+                                    padding:14px 28px;
+                                    color:white;
+                                    border:none;
+                                    border-radius:10px;
+                                    font-weight:600;
+                                    cursor:pointer;
+                                "
+                                onmouseover="this.style.opacity='0.9'"
+                                onmouseout="this.style.opacity='1'">
+                                Track
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="tracking-result" style="margin-top:25px;"></div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT : VIDEO -->
+            <div class="col-lg-6 mt-5">
+
+                <div style="
+                    position:relative;
+                    width:100%;
+                    height:420px;
+                    border-radius:20px;
+                    overflow:hidden;
+                    box-shadow:0 15px 40px rgba(0,0,0,0.18);
+                ">
+                    <video autoplay muted loop playsinline style="
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                    ">
+                        <source src="{% static 'main/videos/Video1.mp4' %}" type="video/mp4">
+                    </video>
+
+                    <!-- VIDEO OVERLAY TEXT -->
+                    <!-- <div style="
+                        position:absolute;
+                        inset:0;
+                        background:linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.5));
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                        color:white;
+                        text-align:center;
+                        padding:20px;
+                    ">
+                        <h2 style="font-weight:800;">
+                            Reliable • Fast • Nationwide
+                        </h2>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
