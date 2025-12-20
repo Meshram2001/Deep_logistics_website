@@ -93,14 +93,92 @@ h1, h2, h3, h4, h5, h6 {
     width: calc(100% - 2rem);
 }
 
-/* 
+
 /* --- Jumbotron / Header --- */
 .jumbotron {
     position: relative;
     overflow: hidden;
-    background-image: url("/static/main/images/Home1.jpg");
+    border-radius: 0 0 50px 60px;
+    padding: 100px 30px;
+    text-align: center;
+    color: white;
+}
+
+/* ---------------- BACKGROUND SLIDES ---------------- */
+.bg-slide {
+    position: absolute;
+    inset: 0;
     background-size: cover;
     background-position: center;
+    animation-duration: 40s; /* 4 images × 20s */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* IMAGES */
+.slide1 { background-image: url("/static/main/images/track1.png"); animation-name: slide1; }
+.slide2 { background-image: url("/static/main/images/Home1.jpg");  animation-name: slide2; }
+.slide3 { background-image: url("/static/main/images/Home1.2.png");  animation-name: slide3; }
+.slide4 { background-image: url("/static/main/images/Home1.3.png"); animation-name: slide4; }
+
+/* ---------------- ANIMATIONS ---------------- */
+
+/* IMAGE 1 (STANDARD START & END) */
+@keyframes slide1 {
+    0%   { transform: translateX(0); opacity: 1; }
+    20%  { transform: translateX(0); opacity: 1; } /* HOLD 20s */
+    25%  { transform: translateX(100%); opacity: 0; }
+
+    75%  { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; } /* BACK TO START */
+}
+
+/* IMAGE 2 */
+@keyframes slide2 {
+    0%   { transform: translateX(-100%); opacity: 0; }
+    20%  { transform: translateX(-100%); opacity: 0; }
+
+    25%  { transform: translateX(0); opacity: 1; }
+    45%  { transform: translateX(0); opacity: 1; } /* HOLD 20s */
+
+    50%  { transform: translateX(100%); opacity: 0; }
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+/* IMAGE 3 */
+@keyframes slide3 {
+    0%   { transform: translateX(100%); opacity: 0; }
+    45%  { transform: translateX(100%); opacity: 0; }
+
+    50%  { transform: translateX(0); opacity: 1; }
+    70%  { transform: translateX(0); opacity: 1; } /* HOLD 20s */
+
+    75%  { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+
+/* IMAGE 4 */
+@keyframes slide4 {
+    0%   { transform: translateX(-100%); opacity: 0; }
+    70%  { transform: translateX(-100%); opacity: 0; }
+
+    75%  { transform: translateX(0); opacity: 1; }
+    95%  { transform: translateX(0); opacity: 1; } /* HOLD 20s */
+
+    100% { transform: translateX(100%); opacity: 0; }
+}
+
+
+/* ---------------- DARK OVERLAY ---------------- */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(13,110,253,0.75),
+        rgba(1,58,99,0.75)
+    );
+    z-index: 2;
 }
 
 
