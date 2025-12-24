@@ -96,21 +96,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Jumbotron / Header --- */
 .jumbotron {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 0 50px 60px;
-    padding: 100px 30px;
-    text-align: center;
-    color: white;
+    border-radius: 0 0 40px 40px;
+    min-height: 350px;
 }
 
-/* ---------------- BACKGROUND SLIDES ---------------- */
 .bg-slide {
     position: absolute;
     inset: 0;
     background-size: cover;
     background-position: center;
-    animation-duration: 40s; /* 4 images × 20s */
+    z-index: 0;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
