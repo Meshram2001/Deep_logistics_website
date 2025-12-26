@@ -69,104 +69,42 @@
                 <img 
                     src="/static/main/images/Main_logo.png" 
                     alt="Deep Logistics"
-                    style="
-                        height: 80px;
-                        width: auto;
-                        vertical-align: middle;
-                    ">
+                    class="navbar-logo">
             </h1>
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0" style="
-                display: flex;
-                gap: 28px;
-                align-items: center;
-            ">
+            <div class="navbar-nav m-auto py-0 navbar-nav-custom">
 
                 <a href="{% url 'home' %}"
-                class="nav-item nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}"
-                style="
-                        font-weight: 600;
-                        color: #333;
-                        position: relative;
-                        padding: 6px 0;
-                        transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#0d6efd'"
-                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
                 Home
                 </a>
 
                 <a href="{% url 'about' %}"
-                class="nav-item nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}"
-                style="
-                        font-weight: 600;
-                        color: #333;
-                        position: relative;
-                        padding: 6px 0;
-                        transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#0d6efd'"
-                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'about' %}active{% endif %}">
                 About
                 </a>
 
                 <a href="{% url 'service' %}"
-                class="nav-item nav-link {% if request.resolver_match.url_name == 'service' %}active{% endif %}"
-                style="
-                        font-weight: 600;
-                        color: #333;
-                        position: relative;
-                        padding: 6px 0;
-                        transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#0d6efd'"
-                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'service' %}active{% endif %}">
                 Service
                 </a>
 
                 <a href="{% url 'contact' %}"
-                class="nav-item nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
-                style="
-                        font-weight: 600;
-                        color: #333;
-                        position: relative;
-                        padding: 6px 0;
-                        transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#0d6efd'"
-                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
                 Contact
                 </a>
 
                 <a href="{% url 'join_with_us' %}"
-                class="nav-item nav-link {% if request.resolver_match.url_name == 'join_with_us' %}active{% endif %}"
-                style="
-                        font-weight: 600;
-                        color: #333;
-                        position: relative;
-                        padding: 6px 0;
-                        transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#0d6efd'"
-                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'join_with_us' %}active{% endif %}">
                 Join With Us
                 </a>
 
                 <a href="{% url 'know_your_consignment' %}"
-                class="nav-item nav-link {% if request.resolver_match.url_name == 'know_your_consignment' %}active{% endif %}"
-                style="
-                        font-weight: 600;
-                        color: #333;
-                        position: relative;
-                        padding: 6px 0;
-                        transition: color 0.3s ease;
-                "
-                onmouseover="this.style.color='#0d6efd'"
-                onmouseout="this.style.color=this.classList.contains('active') ? '#0d6efd' : '#333'">
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'know_your_consignment' %}active{% endif %}">
                 Track Consignment
                 </a>
 
@@ -174,69 +112,20 @@
 
             <a href="{% url 'contact' %}" class="btn btn-primary py-2 px-4 d-none d-lg-block" style="text-decoration:none;">
     
-                <button
-                    style="
-                        position: relative;
-                        width:150px;
-                        height:55px;
-                        border-radius:45px;
-                        border:none;
-                        background:rgb(151,95,255);
-                        color:white;
-                        cursor:pointer;
-                        display:flex;
-                        align-items:center;
-                        justify-content:center;
-                        font-weight:600;
-                        box-shadow:
-                            inset 0px 10px 10px rgb(210,187,253),
-                            0px 5px 10px rgba(5,5,5,0.212),
-                            inset 0px -10px 10px rgb(124,54,255);
-                        overflow:hidden;
-                    "
-                    onmouseover="this.style.animation='jello 0.9s both'"
-                    onmouseout="this.style.animation='none'"
-                >
+                <button class="btn-get-quote">
                     Get A Quote
 
                     <!-- TOP LIGHT LINE -->
-                    <span style="
-                        position:absolute;
-                        top:7px;
-                        width:70%;
-                        height:2px;
-                        background:rgba(255,255,255,0.6);
-                        filter:blur(1px);
-                        border-radius:50%;
-                    "></span>
+                    <span class="btn-get-quote-line-top"></span>
 
                     <!-- BOTTOM LIGHT LINE -->
-                    <span style="
-                        position:absolute;
-                        bottom:7px;
-                        width:70%;
-                        height:2px;
-                        background:rgba(255,255,255,0.15);
-                        filter:blur(1px);
-                        border-radius:50%;
-                    "></span>
+                    <span class="btn-get-quote-line-bottom"></span>
 
                 </button>
 
             </a>
 
-            <!-- INLINE KEYFRAMES (REQUIRED ONCE) -->
-            <style>
-            @keyframes jello {
-            0% { transform: scale3d(1,1,1); }
-            30% { transform: scale3d(1.25,0.75,1); }
-            40% { transform: scale3d(0.75,1.25,1); }
-            50% { transform: scale3d(1.15,0.85,1); }
-            65% { transform: scale3d(0.95,1.05,1); }
-            75% { transform: scale3d(1.05,0.95,1); }
-            100% { transform: scale3d(1,1,1); }
-            }
-            </style>
+
 
             </div>
         </nav>
@@ -248,112 +137,57 @@
     </main>
 
     <!-- Footer Start -->
-    <div style="
-        background: linear-gradient(135deg,#0b1c25,#102a3a,#163b52);
-        color:white;
-        margin-top:60px;
-        padding:60px 30px;
-        box-shadow: inset 0 10px 40px rgba(0,0,0,0.6);
-    ">
+    <div class="main-footer">
         <div class="row pt-4">
             <div class="col-lg-7 col-md-6">
                 <div class="row">
                     <div class="col-md-6 mb-5">
-                        <h3 style="
-                            color:#4da3ff;
-                            font-weight:700;
-                            margin-bottom:20px;
-                            position:relative;
-                        ">
+                        <h3 class="footer-heading">
                             Get In Touch
-                            <span style="
-                                display:block;
-                                width:40px;
-                                height:3px;
-                                background:#4da3ff;
-                                margin-top:8px;
-                                border-radius:10px;
-                            "></span>
                         </h3>
 
-                        <p style="opacity:0.9;">
+                        <p class="footer-text">
                             <i class="fa fa-map-marker-alt me-2"></i>
                             Plot No.1, Sai Managal, Co-Op. Housing Society, Jaitala, Nagpur-440036
                         </p>
-                        <p style="opacity:0.9;">
+                        <p class="footer-text">
                             <i class="fa fa-phone-alt me-2"></i>+91 7758990533
                         </p>
-                        <p style="opacity:0.9;">
+                        <p class="footer-text">
                             <i class="fa fa-envelope me-2"></i>deeplogisticsnagpur@gmail.com
                         </p>
 
-                        <div style="display:flex; gap:12px; margin-top:20px;">
-                            <a href="#" style="
-                                width:42px;height:42px;
-                                border-radius:50%;
-                                border:1px solid rgba(255,255,255,0.3);
-                                display:flex;align-items:center;justify-content:center;
-                                color:white;
-                                transition:0.3s;
-                            " onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
-                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-
-                            <a href="#" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:white;transition:0.3s;"
-                            onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
-                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-
-                            <a href="#" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:white;transition:0.3s;"
-                            onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
-                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-
-                            <a href="#" style="width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;align-items:center;justify-content:center;color:white;transition:0.3s;"
-                            onmouseover="this.style.background='#4da3ff';this.style.boxShadow='0 0 15px #4da3ff'"
-                            onmouseout="this.style.background='transparent';this.style.boxShadow='none'">
-                                <i class="fab fa-instagram"></i>
-                            </a>
+                        <div class="social-icons-container">
+                            <a class="social-icon-link" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-icon-link" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-icon-link" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-icon-link" href=""><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
 
                     <div class="col-md-6 mb-5">
-                        <h3 style="color:#4da3ff;font-weight:700;margin-bottom:20px;">
+                        <h3 class="footer-heading">
                             Quick Links
-                            <span style="display:block;width:40px;height:3px;background:#4da3ff;margin-top:8px;border-radius:10px;"></span>
                         </h3>
 
-                        <div style="display:flex;flex-direction:column;gap:10px;">
-                            <a href="{% url 'home' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
-                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
-                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                        <div class="footer-links-group">
+                            <a href="{% url 'home' %}" class="footer-link">
                                 <i class="fa fa-angle-right me-2"></i>Home
                             </a>
 
-                            <a href="{% url 'about' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
-                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
-                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                            <a href="{% url 'about' %}" class="footer-link">
                                 <i class="fa fa-angle-right me-2"></i>About Us
                             </a>
 
-                            <a href="{% url 'service' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
-                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
-                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                            <a href="{% url 'service' %}" class="footer-link">
                                 <i class="fa fa-angle-right me-2"></i>Our Services
                             </a>
 
-                            <a href="{% url 'join_with_us' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
-                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
-                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                            <a href="{% url 'join_with_us' %}" class="footer-link">
                                 <i class="fa fa-angle-right me-2"></i>Join With Us
                             </a>
 
-                            <a href="{% url 'contact' %}" style="color:#ddd;text-decoration:none;transition:0.3s;"
-                            onmouseover="this.style.color='#4da3ff';this.style.paddingLeft='6px'"
-                            onmouseout="this.style.color='#ddd';this.style.paddingLeft='0'">
+                            <a href="{% url 'contact' %}" class="footer-link">
                                 <i class="fa fa-angle-right me-2"></i>Contact Us
                             </a>
                         </div>
@@ -362,32 +196,16 @@
             </div>
 
             <div class="col-lg-5 col-md-6 mb-5">
-                <h3 style="color:#4da3ff;font-weight:700;margin-bottom:20px;">
+                <h3 class="footer-heading">
                     Newsletter
-                    <span style="display:block;width:40px;height:3px;background:#4da3ff;margin-top:8px;border-radius:10px;"></span>
                 </h3>
-                <p style="opacity:0.9;">
+                <p class="footer-text">
                     Stay updated with our latest news and offers in the logistics industry.
                 </p>
 
-                <div style="display:flex;">
-                    <input type="text" placeholder="Your Email Address" style="
-                        flex:1;
-                        padding:18px 22px;
-                        border:none;
-                        border-radius:30px 0 0 30px;
-                        outline:none;
-                    ">
-                    <button style="
-                        padding:0 30px;
-                        border:none;
-                        background:#4da3ff;
-                        color:white;
-                        border-radius:0 30px 30px 0;
-                        transition:0.3s;
-                    "
-                    onmouseover="this.style.boxShadow='0 0 15px #4da3ff'"
-                    onmouseout="this.style.boxShadow='none'">
+                <div class="newsletter-input-group">
+                    <input type="text" placeholder="Your Email Address" class="newsletter-input">
+                    <button class="newsletter-button">
                         Sign Up
                     </button>
                 </div>
@@ -395,21 +213,16 @@
         </div>
     </div>
 
-    <div style="
-        background:#07161f;
-        color:white;
-        padding:18px 30px;
-        box-shadow:0 -5px 25px rgba(0,0,0,0.6);
-    ">
+    <div class="bottom-footer">
         <div class="row align-items-center">
             <div class="col-lg-6 text-center text-md-start">
                 &copy; {% now "Y" %} <strong>Deep Logistics</strong>. All Rights Reserved.
             </div>
             <div class="col-lg-6 text-center text-md-end">
-                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">Privacy</a>
-                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">Terms</a>
-                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">FAQs</a>
-                <a href="#" style="margin-left:15px;color:#ccc;text-decoration:none;">Help</a>
+                <a href="#" class="bottom-footer-link">Privacy</a>
+                <a href="#" class="bottom-footer-link">Terms</a>
+                <a href="#" class="bottom-footer-link">FAQs</a>
+                <a href="#" class="bottom-footer-link">Help</a>
             </div>
         </div>
     </div>

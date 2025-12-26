@@ -9,6 +9,982 @@ Color Palette:
 - Subtle Shadow: rgba(0, 0, 0, 0.075)
 */
 
+/* Know Your Consignment Page Specific Styles */
+.tracking-section {
+    padding:80px 0;
+    background:white;
+}
+
+.tracking-form-card {
+    background:#ffffff;
+    padding:60px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.tracking-form-card:hover {
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.18);
+}
+
+.tracking-form-title {
+    font-weight:800;
+    margin-bottom:15px;
+    color:#243b6b;
+}
+
+.tracking-form-text {
+    color:#555;
+    margin-bottom:25px;
+}
+
+.tracking-input-group {
+    display:flex;
+    gap:10px;
+}
+
+.tracking-input {
+    flex:1;
+    padding:15px 18px;
+    border:2px solid #e0e6ed;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+.tracking-input:focus {
+    border-color:#007bff;
+}
+
+.tracking-button {
+    background:linear-gradient(135deg,#007bff,#0056d6);
+    padding:14px 28px;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    transition:opacity 0.3s;
+}
+
+.tracking-button:hover {
+    opacity:0.9;
+}
+
+.tracking-result {
+    margin-top:25px;
+}
+
+.tracking-video-container {
+    position:relative;
+    width:100%;
+    height:0; /* for aspect ratio */
+    padding-bottom:56.25%; /* 16:9 aspect ratio */
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.18);
+    margin-top: 20px; /* Added for mobile spacing */
+}
+
+.tracking-video {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Responsive adjustments for Know Your Consignment Page */
+@media (max-width: 991.98px) {
+    .tracking-form-card {
+        padding: 40px;
+    }
+    .tracking-section {
+        padding: 50px 0;
+        margin-left: 0; /* Remove negative margin on smaller screens */
+    }
+    .tracking-video-container {
+        height: auto; /* Reset height for aspect ratio to work */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .tracking-form-card {
+        padding: 25px;
+    }
+    .tracking-form-title {
+        font-size: 24px;
+    }
+    .tracking-form-text {
+        font-size: 14px;
+    }
+    .tracking-input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .tracking-button {
+        width: 100%;
+        padding: 12px;
+    }
+    .tracking-video-container {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .tracking-form-card {
+        padding: 15px;
+    }
+    .tracking-form-title {
+        font-size: 20px;
+    }
+    .tracking-form-text {
+        font-size: 12px;
+    }
+    .tracking-input {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .tracking-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .tracking-video-container {
+        margin-top: 20px;
+    }
+}
+
+/* About Us Image Column Padding */
+.about-image-col {
+    padding: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .about-image-col {
+        padding: 0 15px 15px 15px; /* Adjust padding for tablets and smaller */
+    }
+}
+@media (max-width: 575.98px) {
+    .about-image-col {
+        padding: 0 10px 10px 10px; /* Adjust padding for mobile phones */
+    }
+}
+
+/* Responsive adjustments for Topbar */
+@media (max-width: 767.98px) { /* Medium devices (tablets, 768px and up) */
+    .container-fluid.bg-dark .row {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .container-fluid.bg-dark small {
+        font-size: 0.8rem;
+    }
+    .container-fluid.bg-dark .px-3 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    .container-fluid.bg-dark .d-inline-flex {
+        margin-bottom: 5px;
+    }
+}
+
+/* Footer Sections Styling */
+.main-footer {
+    background: linear-gradient(135deg,#0b1c25,#102a3a,#163b52) !important;
+    color:white !important;
+    min-height: 200px !important; /* Diagnostic min-height */
+    /* border: 5px solid red !important;  */
+    margin-top:60px;
+    padding:60px 30px;
+    box-shadow: inset 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.footer-heading {
+    color:#4da3ff;
+    font-weight:700;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.footer-heading-underline {
+    display:block;
+    width:40px;
+    height:3px;
+    background:#4da3ff;
+    margin-top:8px;
+    border-radius:10px;
+}
+
+.footer-text {
+    opacity:0.9;
+}
+
+/* Social Icons */
+.social-icons-container {
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.social-icon-link {
+    width:42px;height:42px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.3);
+    display:flex;align-items:center;justify-content:center;
+    color:white;
+    transition:0.3s;
+}
+
+.social-icon-link:hover {
+    background:#4da3ff;
+    box-shadow:0 0 15px #4da3ff;
+}
+
+/* Footer Quick Links */
+.footer-links-group {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-link {
+    color:#ddd;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-link:hover {
+    color:#4da3ff;
+    padding-left:6px;
+}
+
+/* Newsletter Section */
+.newsletter-input-group {
+    display:flex;
+}
+
+.newsletter-input {
+    flex:1;
+    padding:18px 22px;
+    border:none;
+    border-radius:30px 0 0 30px;
+    outline:none;
+}
+
+.newsletter-button {
+    padding:0 30px;
+    border:none;
+    background:#4da3ff;
+    color:white;
+    border-radius:0 30px 30px 0;
+    transition:0.3s;
+}
+
+.newsletter-button:hover {
+    box-shadow:0 0 15px #4da3ff;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+    background:#07161f;
+    color:white;
+    padding:18px 30px;
+    box-shadow:0 -5px 25px rgba(0,0,0,0.6);
+}
+
+.bottom-footer-link {
+    margin-left:15px;
+    color:#ccc;
+    text-decoration:none;
+}
+
+/* Responsive adjustments for Footer */
+@media (max-width: 767.98px) { /* Medium devices (tablets, 768px and up) */
+    .main-footer {
+        padding: 40px 15px;
+    }
+    .footer-heading {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-heading-underline {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .social-icons-container {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .footer-links-group {
+        align-items: center;
+    }
+    .bottom-footer .row {
+        text-align: center;
+    }
+    .bottom-footer .col-lg-6 {
+        margin-bottom: 10px;
+    }
+    .bottom-footer-link {
+        margin: 0 5px;
+    }
+    .newsletter-input-group {
+        flex-direction: column;
+    }
+    .newsletter-input {
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .newsletter-button {
+        border-radius: 30px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 575.98px) { /* Small devices (landscape phones, 576px and up) */
+    .main-footer {
+        padding: 30px 10px;
+    }
+    .social-icon-link {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* Contact Page Specific Styles */
+
+/* Contact Header Jumbotron Dark Overlay */
+.jumbotron-overlay-dark {
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
+    z-index:1;
+}
+
+/* Contact Form Layout */
+.contact-form-layout {
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+    justify-content:space-between;
+    width:100%;
+}
+
+/* Contact Form Container */
+.contact-form-container {
+    width:48%;
+    background:#ffffff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Form Label Custom */
+.form-label-custom {
+    font-weight:700;
+}
+
+/* Form Input and Textarea Custom */
+.form-input-custom {
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    margin-bottom:12px;
+}
+
+.form-textarea-custom {
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+
+/* Form Submit Button */
+.btn-form-submit {
+    background:#0d6efd;
+    border:none;
+    color:white;
+    padding:10px 22px;
+    border-radius:6px;
+    font-weight:700;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Map Container */
+.contact-map-container {
+    width:48%;
+}
+
+/* Map Iframe Custom */
+.map-iframe-custom {
+    width:100%;
+    height:450px;
+    border:0;
+    border-radius:12px;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.25);
+}
+
+/* Contact Address Card */
+.contact-address-card {
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    font-family: Arial, sans-serif;
+}
+
+/* Address Title */
+.address-title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffd966;
+}
+
+/* Address Text */
+.address-text {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Service Locations Section */
+.service-locations-section {
+    background:#f2f4ff;
+    padding:50px 0;
+    margin-top:20px;
+}
+
+/* Service Locations Title */
+.service-locations-title {
+    text-align:center;
+    font-weight:800;
+    margin-bottom:35px;
+    color:#243b6b;
+    letter-spacing:1px;
+}
+
+/* Service Locations Grid */
+.service-locations-grid {
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Location Card */
+.location-card {
+    background:white;
+    width:220px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.location-card:hover {
+    transform:translateY(-5px);
+    box-shadow:0px 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Location Card Header (State/Region) */
+.location-card-header {
+    background:#ffd451;
+    color:#7a1a00;
+    font-weight:800;
+    padding:7px 12px;
+    border-radius:6px;
+    text-align:center;
+    margin-bottom:12px;
+}
+
+/* Location Card Text (City List) */
+.location-card-text {
+    line-height:1.6;
+    color:#444;
+}
+
+/* Responsive adjustments for Contact Page */
+@media (max-width: 991.98px) {
+    .contact-form-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact-form-container, .contact-map-container {
+        width: 100%;
+    }
+    .map-iframe-custom {
+        height: 350px;
+    }
+    .service-locations-grid {
+        gap: 20px;
+    }
+    .location-card {
+        width: 45%; /* Two cards per row */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact-form-container, .contact-map-container {
+        padding: 15px;
+    }
+    .map-iframe-custom {
+        height: 300px;
+    }
+    .service-locations-title {
+        font-size: 28px;
+    }
+    .location-card {
+        width: 80%; /* One card per row */
+    }
+    .contact-address-card {
+        padding: 15px;
+    }
+    .address-title {
+        font-size: 16px;
+    }
+    .address-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-form-container {
+        padding: 10px;
+    }
+    .form-input-custom, .form-textarea-custom, .btn-form-submit {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .map-iframe-custom {
+        height: 250px;
+    }
+    .service-locations-section {
+        padding: 30px 0;
+    }
+    .service-locations-title {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .location-card {
+        width: 95%; /* One card per row, more padding */
+        padding: 15px;
+    }
+}
+
+/* Responsive Video Section */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 0; /* Will be overridden by padding-bottom for aspect ratio */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    overflow: hidden;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.video-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Use cover to fill the container, can be 'contain' if preferred */
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.video-section video:hover {
+    transform: scale(1.02); /* Slightly less aggressive scale on hover */
+}
+
+.video-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    animation: fadeMove 2s ease-out forwards;
+    opacity: 0;
+    z-index: 1; /* Ensure overlay text is above video */
+}
+
+.video-overlay-title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.video-overlay-text {
+    font-size: 20px;
+    margin: 0;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+@keyframes fadeMove {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -40%); /* Slight upward start like a truck moving in */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991.98px) { /* Large devices (desktops, 992px and up) */
+    .navbar-nav-custom {
+        gap: 15px; /* Adjust gap for smaller screens */
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    .navbar-nav .nav-link-custom {
+        padding: 8px 0; /* Adjust padding for stacked items */
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link-custom:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .jumbotron {
+        padding: 100px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .jumbotron-title {
+        font-size: 38px; /* Smaller font size for title */
+    }
+
+    .jumbotron-subtitle {
+        font-size: 28px; /* Smaller font size for subtitle */
+    }
+
+    .jumbotron-paragraph {
+        font-size: 18px; /* Smaller font size for paragraph */
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+
+    .video-overlay-title { font-size: 28px; }
+    .video-overlay-text { font-size: 18px; }
+}
+
+@media (max-width: 767.98px) { /* Medium devices (tablets, 768px and up) */
+    .jumbotron {
+        padding: 80px 15px; /* Further adjust padding */
+        min-height: 250px;
+    }
+
+    .jumbotron-title {
+        font-size: 30px;
+    }
+
+    .jumbotron-subtitle {
+        font-size: 22px;
+    }
+
+    .jumbotron-paragraph {
+        font-size: 16px;
+    }
+
+    .btn-get-quote {
+        width: 120px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .navbar-logo {
+        height: 60px; /* Smaller logo for smaller screens */
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+
+    .video-overlay-title { font-size: 24px; }
+    .video-overlay-text { font-size: 16px; }
+}
+
+@media (max-width: 575.98px) { /* Small devices (landscape phones, 576px and up) */
+    .jumbotron {
+        padding: 60px 10px;
+        min-height: 200px;
+    }
+
+    .jumbotron-title {
+        font-size: 24px;
+    }
+
+    .jumbotron-subtitle {
+        font-size: 18px;
+    }
+
+    .jumbotron-paragraph {
+        font-size: 14px;
+    }
+
+    .navbar-nav-custom {
+        gap: 10px;
+    }
+
+    .navbar-logo {
+        height: 50px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+
+    .video-overlay-title { font-size: 20px; }
+    .video-overlay-text { font-size: 14px; }
+
+    .section-heading { /* Adjust service section heading for small devices */
+        font-size: 28px;
+    }
+    .navbar-toggler {
+        padding: 5px 8px; /* Make the toggler button slightly smaller */
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 400px) { /* Very small devices */
+    .jumbotron {
+        padding: 40px 10px; /* Even more compact jumbotron */
+        min-height: 180px;
+    }
+    .jumbotron-title {
+        font-size: 20px;
+    }
+    .jumbotron-subtitle {
+        font-size: 16px;
+    }
+    .jumbotron-paragraph {
+        font-size: 12px;
+    }
+    .navbar-logo {
+        height: 40px; /* Even smaller logo for very small screens */
+    }
+    .container-fluid.bg-dark small {
+        font-size: 0.7rem; /* Smaller text in topbar */
+    }
+    .navbar-toggler {
+        /* Ensure good contrast for toggler icon */
+        background-color: rgba(0,0,0,0.1);
+        border: 1px solid rgba(0,0,0,0.2);
+    }
+}
+
+/* Custom Navbar Nav Styling */
+.navbar-nav-custom {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+/* Navbar Logo Styling */
+.navbar-logo {
+    height: 80px;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Custom Nav Link Styling */
+.navbar-nav .nav-link-custom {
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link-custom:hover {
+    color: #0d6efd;
+}
+
+.navbar-nav .nav-link-custom.active {
+    color: #0d6efd;
+}
+
+/* Get A Quote Button */
+.btn-get-quote {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background: rgb(151,95,255);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow:
+        inset 0px 10px 10px rgb(210,187,253),
+        0px 5px 10px rgba(5,5,5,0.212),
+        inset 0px -10px 10px rgb(124,54,255);
+    overflow: hidden;
+    transition: all 0.9s both; /* For jello animation */
+}
+
+.btn-get-quote:hover {
+    animation: jello 0.9s both;
+}
+
+.btn-get-quote-line-top,
+.btn-get-quote-line-bottom {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    filter: blur(1px);
+    border-radius: 50%;
+}
+
+.btn-get-quote-line-top {
+    top: 7px;
+    background: rgba(255,255,255,0.6);
+}
+
+.btn-get-quote-line-bottom {
+    bottom: 7px;
+    background: rgba(255,255,255,0.15);
+}
+
+@keyframes jello {
+    0% { transform: scale3d(1,1,1); }
+    30% { transform: scale3d(1.25,0.75,1); }
+    40% { transform: scale3d(0.75,1.25,1); }
+    50% { transform: scale3d(1.15,0.85,1); }
+    65% { transform: scale3d(0.95,1.05,1); }
+    75% { transform: scale3d(1.05,0.95,1); }
+    100% { transform: scale3d(1,1,1); }
+}
+
+/* Service Section Headings */
+.section-subheading {
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading {
+    font-size: 34px;
+    font-weight: 800;
+    color: #222;
+}
+
+/* Service Card Styling */
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    transition: 0.35s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-card-icon-container {
+    border-radius: 12px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Specific gradients for each service */
+.gradient-air-cargo {
+    background: linear-gradient(135deg, #007bff, #0056d6);
+}
+
+.gradient-train-cargo {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.gradient-surface-transport {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.gradient-cargo-storage {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.service-card-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.service-card-title {
+    font-weight: 600;
+    margin: 0;
+}
+
+.service-card-text {
+    color: #555;
+    font-size: 15px;
+}
+
+.service-card-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.service-card-link:hover {
+    color: #0056d6;
+}
+
+/* Image Styling for About/Features sections */
+.img-card-shadow {
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.img-card-shadow:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
 /* --- Global Styles & Typography --- */
 body {
     font-family: 'Poppins', sans-serif;
@@ -98,6 +1074,59 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron {
     border-radius: 0 0 40px 40px;
     min-height: 350px;
+    position: relative; /* Added from inline style */
+    overflow: hidden; /* Added from inline style */
+    padding: 150px 40px; /* Added from inline style */
+    text-align: center; /* Added from inline style */
+    color: white; /* Added from inline style */
+}
+
+/* Custom overlay gradient */
+.jumbotron-overlay-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13,110,253,0.75), rgba(1,58,99,0.75));
+    z-index: -1;
+}
+
+/* Main title styling */
+.jumbotron-title {
+    color:#ffffff;
+    font-weight:700;
+    letter-spacing:1px;
+    font-size:56px;
+    text-transform:uppercase;
+    text-shadow:
+        1px 1px 0 #b3b3b3,
+        2px 2px 0 #9e9e9e,
+        3px 3px 0 #8a8a8a,
+        4px 4px 0 #767676,
+        5px 5px 0 #626262,
+        6px 6px 10px rgba(0,0,0,0.5);
+}
+
+/* Subtitle styling */
+.jumbotron-subtitle {
+    color:#ffffff;
+    font-weight:700;
+    letter-spacing:1px;
+    font-size:44px;
+    margin-top:5px;
+    text-transform:uppercase;
+    text-shadow:
+        1px 1px 0 #b3b3b3,
+        2px 2px 0 #9e9e9e,
+        3px 3px 0 #8a8a8a,
+        4px 4px 0 #767676,
+        5px 5px 0 #626262,
+        6px 6px 10px rgba(0,0,0,0.5);
+}
+
+/* Paragraph styling */
+.jumbotron-paragraph {
+    font-size: 25px;
+    opacity: 0.95;
+    font-weight: bold;
 }
 
 .bg-slide {
@@ -254,44 +1283,4 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* --- Footer --- */
-.footer {
-    background: #212529;
-    color: #adb5bd;
-}
 
-.footer .text-primary {
-    color: #ff7f50 !important; /* Use accent color in footer */
-}
-
-.footer .btn-social {
-    border-radius: 50%;
-    border: 1px solid #adb5bd;
-    color: #adb5bd;
-    transition: all 0.3s ease;
-}
-
-.footer .btn-social:hover {
-    background: #ff7f50;
-    color: white;
-    border-color: #ff7f50;
-}
-
-.footer a {
-    color: #adb5bd;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #ffffff;
-}
-
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-}

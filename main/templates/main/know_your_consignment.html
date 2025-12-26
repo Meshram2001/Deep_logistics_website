@@ -15,12 +15,7 @@
             <div class="bg-slide slide4"></div>
 
             <!-- Dark Overlay -->
-            <div style="
-                position:absolute;
-                inset:0;
-                background:rgba(0,0,0,0.55);
-                z-index:1;
-            "></div>
+            <div class="jumbotron-overlay-dark"></div>
 
             <!-- CONTENT -->
             <div class="container text-center py-5" style="position:relative; z-index:2;">
@@ -38,7 +33,7 @@
 <!-- HEADER END -->
 
 <!-- TRACKING + VIDEO SECTION -->
-<div class="container-fluid" style="padding:80px 0; background:white; margin-left:-40px;">
+<div class="container-fluid tracking-section">
     <div class="container">
 
   
@@ -46,50 +41,27 @@
         <div class="row align-items-center">
 
             <!-- LEFT : TRACKING FORM -->
-            <div class="col-lg-6 mt-10" >
+            <div class="col-lg-6 mt-10">
 
-                <div style="
-                    background:#ffffff;
-                    padding:60px;
-                    border-radius:20px;
-                    box-shadow:0 10px 30px rgba(0,0,0,0.12);
-                    transition:0.3s;
-                "
-                onmouseover="this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(0,0,0,0.18)'"
-                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.12)'">
+                <div class="tracking-form-card">
 
-                    <h3 style="font-weight:800; margin-bottom:15px; color:#243b6b;">
+                    <h3 class="tracking-form-title">
                         Track Your Consignment
                     </h3>
 
-                    <p style="color:#555; margin-bottom:25px;">
+                    <p class="tracking-form-text">
                         Enter your consignment number to get real-time shipment updates.
                     </p>
 
                     <form id="tracking-form">
-                        <div style="display:flex; gap:10px;">
+                        <div class="tracking-input-group">
                             <input type="text" placeholder="Enter Consignment Number" required
-                                style="
-                                    flex:1;
-                                    padding:15px 18px;
-                                    border:2px solid #e0e6ed;
-                                    border-radius:10px;
-                                    outline:none;
-                                    transition:0.3s;
-                                "
+                                class="tracking-input"
                                 onfocus="this.style.borderColor='#007bff'"
                                 onblur="this.style.borderColor='#e0e6ed'">
 
                             <button type="submit"
-                                style="
-                                    background:linear-gradient(135deg,#007bff,#0056d6);
-                                    padding:14px 28px;
-                                    color:white;
-                                    border:none;
-                                    border-radius:10px;
-                                    font-weight:600;
-                                    cursor:pointer;
-                                "
+                                class="tracking-button"
                                 onmouseover="this.style.opacity='0.9'"
                                 onmouseout="this.style.opacity='1'">
                                 Track
@@ -97,7 +69,7 @@
                         </div>
                     </form>
 
-                    <div id="tracking-result" style="margin-top:25px;"></div>
+                    <div id="tracking-result" class="tracking-result"></div>
 
                 </div>
             </div>
@@ -105,19 +77,8 @@
             <!-- RIGHT : VIDEO -->
             <div class="col-lg-6 mt-5">
 
-                <div style="
-                    position:relative;
-                    width:100%;
-                    height:420px;
-                    border-radius:20px;
-                    overflow:hidden;
-                    box-shadow:0 15px 40px rgba(0,0,0,0.18);
-                ">
-                    <video autoplay muted loop playsinline style="
-                        width:100%;
-                        height:100%;
-                        object-fit:cover;
-                    ">
+                <div class="tracking-video-container">
+                    <video autoplay muted loop playsinline class="tracking-video">
                         <source src="{% static 'main/videos/Video1.mp4' %}" type="video/mp4">
                     </video>
 
