@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Deep Logistics - Redefining Time{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Deep Logistics - Logistics, Transportation, Cargo, India" name="keywords">
+    <meta content="Deep Logistics offers seamless, secure, and dependable logistics solutions across India. FTL, PTL, Air, Rail, and Surface Cargo services." name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{% static 'main/images/Fevicon_logo.png' %}">
+
+
+    <!-- Google Web Fonts (Poppins already loaded by me) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (using my version 6) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet (using my version 5) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+
+    <!-- GSAP Core -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+
+</head>
+
+<!-- Splash Screen -->
+<div id="splash-screen">
+    <div class="splash-content">
+        <img src="{% static 'main/images/Main_logo.png' %}" alt="Deep Logistics Logo">
+        <h1 class="company-name">Deep Logistics</h1>
+        <p class="tagline">Moving Trust. Delivering Excellence.</p>
+    </div>
+</div>
+
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt me-2"></i>+91 7758990533</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope me-2"></i>deeplogisticsnagpur@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="text-white px-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="text-white px-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="text-white px-2" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="text-white ps-2" href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="{% url 'home' %}" class="navbar-brand ms-lg-3">
+            <h1 class="m-0">
+                <img 
+                    src="/static/main/images/Main_logo.png" 
+                    alt="Deep Logistics"
+                    class="navbar-logo">
+            </h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0 navbar-nav-custom">
+
+                <a href="{% url 'home' %}"
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+                Home
+                </a>
+
+                <a href="{% url 'about' %}"
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'about' %}active{% endif %}">
+                About
+                </a>
+
+                <a href="{% url 'service' %}"
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'service' %}active{% endif %}">
+                Service
+                </a>
+
+                <a href="{% url 'contact' %}"
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
+                Contact
+                </a>
+
+                <a href="{% url 'join_with_us' %}"
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'join_with_us' %}active{% endif %}">
+                Join With Us
+                </a>
+
+                <a href="{% url 'know_your_consignment' %}"
+                class="nav-item nav-link nav-link-custom {% if request.resolver_match.url_name == 'know_your_consignment' %}active{% endif %}">
+                Track Consignment
+                </a>
+
+            </div>
+
+            <a href="{% url 'contact' %}" class="btn btn-primary py-2 px-4 d-none d-lg-block" style="text-decoration:none;">
+    
+                <button class="btn-get-quote">
+                    Get A Quote
+
+                    <!-- TOP LIGHT LINE -->
+                    <span class="btn-get-quote-line-top"></span>
+
+                    <!-- BOTTOM LIGHT LINE -->
+                    <span class="btn-get-quote-line-bottom"></span>
+
+                </button>
+
+            </a>
+
+
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer Start -->
+    <div class="main-footer">
+        <div class="row pt-4">
+            <div class="col-lg-7 col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h3 class="footer-heading">
+                            Get In Touch
+                        </h3>
+
+                        <p class="footer-text">
+                            <i class="fa fa-map-marker-alt me-2"></i>
+                            Plot No.1, Sai Managal, Co-Op. Housing Society, Jaitala, Nagpur-440036
+                        </p>
+                        <p class="footer-text">
+                            <i class="fa fa-phone-alt me-2"></i>+91 7758990533
+                        </p>
+                        <p class="footer-text">
+                            <i class="fa fa-envelope me-2"></i>deeplogisticsnagpur@gmail.com
+                        </p>
+
+                        <div class="social-icons-container">
+                            <a class="social-icon-link" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-icon-link" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-icon-link" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-icon-link" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <h3 class="footer-heading">
+                            Quick Links
+                        </h3>
+
+                        <div class="footer-links-group">
+                            <a href="{% url 'home' %}" class="footer-link">
+                                <i class="fa fa-angle-right me-2"></i>Home
+                            </a>
+
+                            <a href="{% url 'about' %}" class="footer-link">
+                                <i class="fa fa-angle-right me-2"></i>About Us
+                            </a>
+
+                            <a href="{% url 'service' %}" class="footer-link">
+                                <i class="fa fa-angle-right me-2"></i>Our Services
+                            </a>
+
+                            <a href="{% url 'join_with_us' %}" class="footer-link">
+                                <i class="fa fa-angle-right me-2"></i>Join With Us
+                            </a>
+
+                            <a href="{% url 'contact' %}" class="footer-link">
+                                <i class="fa fa-angle-right me-2"></i>Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mb-5">
+                <h3 class="footer-heading">
+                    Newsletter
+                </h3>
+                <p class="footer-text">
+                    Stay updated with our latest news and offers in the logistics industry.
+                </p>
+
+                <div class="newsletter-input-group">
+                    <input type="text" placeholder="Your Email Address" class="newsletter-input">
+                    <button class="newsletter-button">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-md-start">
+                &copy; {% now "Y" %} <strong>Deep Logistics</strong>. All Rights Reserved.
+            </div>
+            <div class="col-lg-6 text-center text-md-end">
+                <a href="#" class="bottom-footer-link">Privacy</a>
+                <a href="#" class="bottom-footer-link">Terms</a>
+                <a href="#" class="bottom-footer-link">FAQs</a>
+                <a href="#" class="bottom-footer-link">Help</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Placeholder for easing.min.js and waypoints.min.js - not adding external CDN for now -->
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+
+</html>

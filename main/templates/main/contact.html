@@ -1,0 +1,223 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Contact Deep Logistics{% endblock %}
+
+{% block content %}
+    <!-- Header Start -->
+        <div class="jumbotron jumbotron-fluid mb-5" style="position:relative; overflow:hidden;">
+
+            <!-- Background Slides -->
+            <div class="bg-slide slide1"></div>
+            <div class="bg-slide slide2"></div>
+            <div class="bg-slide slide3"></div>
+            <div class="bg-slide slide4"></div>
+
+            <!-- Dark Overlay -->
+            <div class="jumbotron-overlay-dark"></div>
+
+            <!-- CONTENT -->
+            <div class="container text-center py-5" style="position:relative; z-index:2;">
+                <h1 class="text-white display-3">Contact</h1>
+                <div class="d-inline-flex align-items-center text-white">
+                    <p class="m-0">
+                        <a class="text-white" href="{% url 'home' %}">Home</a>
+                    </p>
+                    <i class="fa fa-circle px-3"></i>
+                    <p class="m-0">Contact</p>
+                </div>
+            </div>
+
+        </div>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+<div class="container" style="padding:40px 0; max-width:1200px; margin:auto;">
+
+    <!-- CONTACT HEADING -->
+    <h6 class="section-subheading">Contact Us</h6>
+    <h1 class="section-heading">Contact For Any Queries</h1>
+
+    <!-- FLEX BOX -->
+    <div class="contact-form-layout">
+
+        <!-- LEFT FORM -->
+        <div class="contact-form-container">
+            <form id="contactForm">
+                {% csrf_token %}
+
+                <label class="form-label-custom">Your Name</label>
+                <input type="text" class="form-input-custom">
+
+                <label class="form-label-custom">Your Email</label>
+                <input type="email" class="form-input-custom">
+
+                <label class="form-label-custom">Subject</label>
+                <input type="text" class="form-input-custom">
+
+                <label class="form-label-custom">Message</label>
+                <textarea rows="3" class="form-textarea-custom"></textarea>
+
+                <button class="btn-form-submit">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- RIGHT MAP -->
+        <div class="contact-map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                class="map-iframe-custom"
+                allowfullscreen="">
+            </iframe>
+        </div>
+
+    </div>
+
+    <!-- ADDRESS SECTION BELOW FLEX -->
+<div class="contact-address-card">
+
+    <!-- REGISTERED OFFICE -->
+    <div style="margin-bottom: 15px;">
+        <h4 class="address-title">
+            📍 Registered Office
+        </h4>
+
+        <p class="address-text">
+            Plot No.1, Sai Mangal, Co-Op. Housing Society, Jaitala, Nagpur-440036<br>
+            📞 <strong>+91 7758990533</strong> &nbsp;|&nbsp;
+            ✉️ <strong>deeplogisticsnagpur@gmail.com</strong>
+        </p>
+    </div>
+
+    <!-- DIVIDER -->
+    <div style="
+        height: 1px;
+        background: rgba(255,255,255,0.3);
+        margin: 15px 0;
+    "></div>
+
+    <!-- WADI OFFICE -->
+    <div>
+        <h4 class="address-title">
+            📍 Wadi Office
+        </h4>
+
+        <p class="address-text">
+            Plot 7, 1st Floor, Pande Layout, Khadgaon Road, Wadi, Nagpur-440023<br>
+            📞 <strong>+91 7758990534</strong>
+        </p>
+    </div>
+
+</div>
+
+
+</div>
+
+
+<!-- Cites Along with States -->
+
+
+<div class="service-locations-section">
+
+    <h2 class="service-locations-title">
+        Our Service Locations
+    </h2>
+
+    <div class="service-locations-grid">
+
+        <!-- CARD TEMPLATE -->
+        <div class="location-card">
+
+            <div class="location-card-header">
+                MAHARASHTRA
+            </div>
+
+            <p class="location-card-text">
+                Ahmednagar<br>Akluj<br>Amravati<br>Akola<br>Barshi<br>Bhiwandi<br>Chandrapur<br>Jalgaon<br>Kolhapur<br>Latur<br>Mumbai<br>Nanded<br>Pandharpur<br>Pune<br>Phaltan<br>Satara City
+            </p>
+        </div>
+
+        <!-- CHATTISGARH -->
+        <div class="location-card">
+            <div class="location-card-header">
+                CHATTISGARH
+            </div>
+            <p class="location-card-text">Raipur<br>Bilaspur<br>Bhilai<br>Durg</p>
+        </div>
+
+        <!-- UTTAR PRADESH -->
+        <div class="location-card">
+            <div class="location-card-header">
+                UTTAR PRADESH
+            </div>
+            <p class="location-card-text">UP Border<br>Meerut<br>Noida<br>Ghaziabad<br>Philkhua</p>
+        </div>
+
+        <!-- DELHI & NCR -->
+        <div class="location-card">
+            <div class="location-card-header">
+                DELHI & NCR
+            </div>
+            <p class="location-card-text">
+                Alipur<br>Narina<br>Karolbagh<br>Bawana<br>Mangolpuri<br>Gandhi Nagar<br>Shadara<br>Kashmere Gate<br>Wazirpur
+            </p>
+        </div>
+
+        <!-- HARYANA -->
+        <div class="location-card">
+            <div class="location-card-header">
+                HARYANA
+            </div>
+            <p class="location-card-text">Faridabad<br>Gurgaon<br>Panipat<br>Sonipat<br>Karnal</p>
+        </div>
+
+        <!-- GUJARAT -->
+        <div class="location-card">
+            <div class="location-card-header">
+                GUJARAT
+            </div>
+            <p class="location-card-text">Rajkot<br>Shapar<br>Matoda<br>Jamnagar<br>Junagadh<br>Morbi</p>
+        </div>
+
+        <!-- PUNJAB -->
+        <div class="location-card">
+            <div class="location-card-header">
+                PUNJAB
+            </div>
+            <p class="location-card-text">Ludhiana</p>
+        </div>
+
+        <!-- Karnataka -->
+        <div class="location-card">
+            <div class="location-card-header">
+                Karnataka
+            </div>
+            <p class="location-card-text">Bangalore</p>
+        </div>
+
+        <!-- Telengana -->
+        <div class="location-card">
+            <div class="location-card-header">
+                Telengana
+            </div>
+            <p class="location-card-text">Hydrabaad</p>
+        </div>
+
+        <!-- Tamil Nadu -->
+        <div class="location-card">
+            <div class="location-card-header">
+                Tamil Nadu
+            </div>
+            <p class="location-card-text">Chennai</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!-- Contact End -->
+{% endblock %}

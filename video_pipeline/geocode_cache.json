@@ -1,0 +1,428 @@
+{
+  "Maharashtra::Ahmednagar": {
+    "lat": 19.1627725,
+    "lon": 74.8580243,
+    "query": "Ahmednagar, Maharashtra, India",
+    "display_name": "Ahmednagar, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Akluj": {
+    "lat": 17.8930069,
+    "lon": 75.0204482,
+    "query": "Akluj, Maharashtra, India",
+    "display_name": "Akluj, Malshiras, Solapur, Maharashtra, 413101, India",
+    "type": "town",
+    "class": "place"
+  },
+  "Maharashtra::Amravati": {
+    "lat": 21.1545412,
+    "lon": 77.6442962,
+    "query": "Amravati, Maharashtra, India",
+    "display_name": "Amravati, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Akola": {
+    "lat": 20.7618123,
+    "lon": 77.1921157,
+    "query": "Akola, Maharashtra, India",
+    "display_name": "Akola, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Barshi": {
+    "lat": 18.2341108,
+    "lon": 75.6875109,
+    "query": "Barshi, Maharashtra, India",
+    "display_name": "Barshi, Solapur, Maharashtra, 413400, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Maharashtra::Baramati": {
+    "lat": 18.2198537,
+    "lon": 74.4534054,
+    "query": "Baramati, Maharashtra, India",
+    "display_name": "Baramati, Pune, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Bhiwandi": {
+    "lat": 19.3025562,
+    "lon": 73.0588072,
+    "query": "Bhiwandi, Maharashtra, India",
+    "display_name": "Bhiwandi, Bhiwandi Taluka, Thane, Maharashtra, 421302, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Maharashtra::Chandrapur": {
+    "lat": 20.0967555,
+    "lon": 79.5045475,
+    "query": "Chandrapur, Maharashtra, India",
+    "display_name": "Chandrapur, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Indapur": {
+    "lat": 18.1125305,
+    "lon": 74.9238654,
+    "query": "Indapur, Maharashtra, India",
+    "display_name": "Indapur, Pune, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Jalgaon": {
+    "lat": 20.8428826,
+    "lon": 75.5261246,
+    "query": "Jalgaon, Maharashtra, India",
+    "display_name": "Jalgaon, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Kolhapur": {
+    "lat": 16.7028412,
+    "lon": 74.2405329,
+    "query": "Kolhapur, Maharashtra, India",
+    "display_name": "Kolhapur, Karvir, Kolhapur, Maharashtra, 416003, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Maharashtra::Latur": {
+    "lat": 18.3553347,
+    "lon": 76.7548997,
+    "query": "Latur, Maharashtra, India",
+    "display_name": "Latur, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Mumbai": {
+    "lat": 19.054999,
+    "lon": 72.8692035,
+    "query": "Mumbai, Maharashtra, India",
+    "display_name": "Mumbai, Mumbai Suburban, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Nanded": {
+    "lat": 19.0940088,
+    "lon": 77.4831922,
+    "query": "Nanded, Maharashtra, India",
+    "display_name": "Nanded, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Pandharpur": {
+    "lat": 17.7255921,
+    "lon": 75.3001936,
+    "query": "Pandharpur, Maharashtra, India",
+    "display_name": "Pandharpur, Solapur, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Pune": {
+    "lat": 18.5213738,
+    "lon": 73.8545071,
+    "query": "Pune, Maharashtra, India",
+    "display_name": "Pune City, Pune, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Phaltan": {
+    "lat": 17.9579342,
+    "lon": 74.4142354,
+    "query": "Phaltan, Maharashtra, India",
+    "display_name": "Phaltan, Satara, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Sangli": {
+    "lat": 17.1726928,
+    "lon": 74.5867654,
+    "query": "Sangli, Maharashtra, India",
+    "display_name": "Sangli, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Sambhaji Nagar": {
+    "lat": 20.0224932,
+    "lon": 75.1515442,
+    "query": "Chhatrapati Sambhajinagar, Maharashtra, India",
+    "display_name": "Chhatrapati Sambhajinagar, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Solapur Kondi": {
+    "lat": null,
+    "lon": null,
+    "query": "Solapur Kondi, Maharashtra, India",
+    "status": "not_found"
+  },
+  "Maharashtra::Solapur City": {
+    "lat": 17.8499067,
+    "lon": 75.2763203,
+    "query": "Solapur, Maharashtra, India",
+    "display_name": "Solapur, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Maharashtra::Satara City": {
+    "lat": 17.6361289,
+    "lon": 74.2982781,
+    "query": "Satara, Maharashtra, India",
+    "display_name": "Satara, Maharashtra, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Chhattisgarh::Raipur": {
+    "lat": 21.2380912,
+    "lon": 81.6336993,
+    "query": "Raipur, Chhattisgarh, India",
+    "display_name": "Raipur, Raipur Tahsil, Raipur, Chhattisgarh, 493332, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Chhattisgarh::Bilaspur": {
+    "lat": 22.1638486,
+    "lon": 82.1365923,
+    "query": "Bilaspur, Chhattisgarh, India",
+    "display_name": "Bilaspur, Chhattisgarh, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Chhattisgarh::Bhilai": {
+    "lat": 21.2120677,
+    "lon": 81.3732849,
+    "query": "Bhilai, Chhattisgarh, India",
+    "display_name": "Bhilai, Durg Tahsil, Durg, Chhattisgarh, 490023, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Chhattisgarh::Durg": {
+    "lat": 21.1982964,
+    "lon": 81.4007922,
+    "query": "Durg, Chhattisgarh, India",
+    "display_name": "Durg, Chhattisgarh, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Delhi::Alipur": {
+    "lat": 28.7973118,
+    "lon": 77.138667,
+    "query": "Alipur, Delhi, India",
+    "display_name": "Alipur, Alipur Tehsil, North Delhi, Delhi, 110036, India",
+    "type": "suburb",
+    "class": "place"
+  },
+  "Delhi::Naraina": {
+    "lat": 28.6264562,
+    "lon": 77.1349668,
+    "query": "Naraina, Delhi, India",
+    "display_name": "Naraina, New Delhi, Delhi, 110028, India",
+    "type": "suburb",
+    "class": "place"
+  },
+  "Delhi::Karol Bagh": {
+    "lat": 28.6529982,
+    "lon": 77.1890227,
+    "query": "Karol Bagh, Delhi, India",
+    "display_name": "Karol Bagh, Karol Bagh Tehsil, Central Delhi, Delhi, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Delhi::Bawana": {
+    "lat": 28.79966,
+    "lon": 77.0328847,
+    "query": "Bawana, Delhi, India",
+    "display_name": "Bawana, Narela Tehsil, North Delhi, Delhi, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Delhi::Mangolpuri": {
+    "lat": 28.6836984,
+    "lon": 77.0914827,
+    "query": "Mangolpuri, Delhi, India",
+    "display_name": "Mangolpuri, Outer Ring Road, Punjabi Bagh Tehsil, West Delhi, Delhi, 110056, India",
+    "type": "halt",
+    "class": "railway"
+  },
+  "Delhi::Gandhi Nagar": {
+    "lat": 28.6587904,
+    "lon": 77.2715878,
+    "query": "Gandhi Nagar, Delhi, India",
+    "display_name": "Gandhi Nagar, Vivek Vihar Tehsil, Shahdara, Delhi, 110031, India",
+    "type": "suburb",
+    "class": "place"
+  },
+  "Delhi::Shadara": {
+    "lat": null,
+    "lon": null,
+    "query": "Shadara, Delhi, India",
+    "status": "not_found"
+  },
+  "Delhi::Dayabasti": {
+    "lat": 28.6671217,
+    "lon": 77.17119,
+    "query": "Dayabasti, Delhi, India",
+    "display_name": "Dayabasti, Zakhira Flyover, Onkar Nagar, Saraswati Vihar Tehsil, North West Delhi, Delhi, 110035, India",
+    "type": "station",
+    "class": "railway"
+  },
+  "Delhi::Kamla Market": {
+    "lat": 28.6786683,
+    "lon": 77.2072566,
+    "query": "Kamla Market, Delhi, India",
+    "display_name": "kamla market, Chhatori Lane, Jaipuria Mill, Kamla Nagar, Civil Lines Tehsil, Central Delhi, Delhi, 110007, India",
+    "type": "marketplace",
+    "class": "amenity"
+  },
+  "Delhi::Kashmere Gate": {
+    "lat": 28.6668141,
+    "lon": 77.2290549,
+    "query": "Kashmere Gate, Delhi, India",
+    "display_name": "Kashmere Gate, Lothiyan Road, Kashmere Gate, Kotwali Tehsil, Central Delhi, Delhi, 110006, India",
+    "type": "archaeological_site",
+    "class": "historic"
+  },
+  "Delhi::Sadar Bazar": {
+    "lat": 28.658087,
+    "lon": 77.2170087,
+    "query": "Sadar Bazar, Delhi, India",
+    "display_name": "Sadar Bazar, Qutab Road, Nabi Karim, Old Delhi, Kotwali Tehsil, Central Delhi, Delhi, 110006, India",
+    "type": "station",
+    "class": "railway"
+  },
+  "Delhi::Wazirpur": {
+    "lat": 28.6800843,
+    "lon": 77.1702212,
+    "query": "Wazirpur, Delhi, India",
+    "display_name": "Wazirpur, Saraswati Vihar Tehsil, North West Delhi, Delhi, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Punjab::Ludhiana": {
+    "lat": 30.9090157,
+    "lon": 75.851601,
+    "query": "Ludhiana, Punjab, India",
+    "display_name": "Ludhiana, Ludhiana (West) Tahsil, Ludhiana, Punjab, 141001, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Uttar Pradesh::Meerut": {
+    "lat": 29.0018557,
+    "lon": 77.7679671,
+    "query": "Meerut, Uttar Pradesh, India",
+    "display_name": "Meerut, Uttar Pradesh, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Uttar Pradesh::Noida": {
+    "lat": 28.5706333,
+    "lon": 77.3272147,
+    "query": "Noida, Uttar Pradesh, India",
+    "display_name": "Noida, Dadri, Gautam Buddha Nagar, Uttar Pradesh, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Uttar Pradesh::Ghaziabad": {
+    "lat": 28.7749966,
+    "lon": 77.4586967,
+    "query": "Ghaziabad, Uttar Pradesh, India",
+    "display_name": "Ghaziabad, Uttar Pradesh, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Uttar Pradesh::Phulkua": {
+    "lat": null,
+    "lon": null,
+    "query": "Phulkua, Uttar Pradesh, India",
+    "status": "not_found"
+  },
+  "Haryana::Faridabad": {
+    "lat": 28.4031478,
+    "lon": 77.3105561,
+    "query": "Faridabad, Haryana, India",
+    "display_name": "Faridabad, Haryana, 121001, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Haryana::Gurgaon": {
+    "lat": 28.4646148,
+    "lon": 77.0299194,
+    "query": "Gurgaon, Haryana, India",
+    "display_name": "Gurgaon, Haryana, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Haryana::Panipath": {
+    "lat": 29.3912753,
+    "lon": 76.9771675,
+    "query": "Panipat, Haryana, India",
+    "display_name": "Panipat, Haryana, 132100, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Haryana::Sonipat": {
+    "lat": 28.9953758,
+    "lon": 77.0233627,
+    "query": "Sonipat, Haryana, India",
+    "display_name": "Sonipat, Haryana, 131001, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Haryana::Karnal": {
+    "lat": 29.7255766,
+    "lon": 76.9106924,
+    "query": "Karnal, Haryana, India",
+    "display_name": "Karnal, Haryana, India",
+    "type": "administrative",
+    "class": "boundary"
+  },
+  "Gujarat::Rajkot": {
+    "lat": 22.3053263,
+    "lon": 70.8028377,
+    "query": "Rajkot, Gujarat, India",
+    "display_name": "Rajkot, Rajkot East Taluka, Rajkot, Gujarat, 360001, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Gujarat::Shapar": {
+    "lat": 22.1587575,
+    "lon": 70.7979969,
+    "query": "Shapar, Gujarat, India",
+    "display_name": "Shapar Veraval, NH27, Kotda Sangani Taluka, Rajkot, Gujarat, 360024, India",
+    "type": "apartment",
+    "class": "tourism"
+  },
+  "Gujarat::Matoda": {
+    "lat": 22.8838171,
+    "lon": 72.3995579,
+    "query": "Matoda, Gujarat, India",
+    "display_name": "Matoda, NH47, Sanand Taluka, Ahmedabad, Gujarat, India",
+    "type": "station",
+    "class": "railway"
+  },
+  "Gujarat::Jamnagar": {
+    "lat": 22.4732415,
+    "lon": 70.0552102,
+    "query": "Jamnagar, Gujarat, India",
+    "display_name": "Jamnagar, Jamnagar City Taluka, Jamnagar, Gujarat, India",
+    "type": "city",
+    "class": "place"
+  },
+  "Gujarat::Junagarh": {
+    "lat": 21.25,
+    "lon": 70.333333,
+    "query": "Junagarh, Gujarat, India",
+    "display_name": "Junagadh, Gujarat, 362229, India",
+    "type": "county",
+    "class": "place"
+  },
+  "Gujarat::Morbi": {
+    "lat": 22.8003959,
+    "lon": 70.886232,
+    "query": "Morbi, Gujarat, India",
+    "display_name": "Morbi, Gujarat, India",
+    "type": "administrative",
+    "class": "boundary"
+  }
+}

@@ -1,0 +1,261 @@
+{% extends 'main/base.html' %}
+
+
+{% block title %}Welcome to Deep Logistics{% endblock %}
+
+{% block content %}
+
+{% load static %}
+    <!-- Header Start -->
+
+    
+<div class="jumbotron jumbotron-fluid mb-5">
+
+    <!-- Background Slides -->
+    <span class="bg-slide slide1"></span>
+    <span class="bg-slide slide2"></span>
+    <span class="bg-slide slide3"></span>
+    <span class="bg-slide slide4"></span>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Blurred Background Image -->
+    <!-- <div style="
+        position: absolute;
+        inset: 0;
+        background-image: url('/static/main/images/Home1.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(8px);
+        transform: scale(1.1);
+        z-index: -2;
+    "></div> -->
+
+    <!-- Dark Gradient Overlay -->
+    <div class="jumbotron-overlay-gradient"></div>
+
+    <div class="container text-center py-5">
+
+    <h1 class="jumbotron-title">
+            Deep Logistics
+        </h1>
+
+        <h1 class="jumbotron-subtitle">
+            Redefining Time
+        </h1>
+
+
+        <p class="jumbotron-paragraph">
+            FLT and PLT Service Available All Over India
+        </p>
+
+        <!-- <div style="width: 100%; max-width: 600px; margin: auto;">
+
+            <form id="home-tracking-form" style="display: flex; width: 100%;">
+
+                <input type="text" id="home-tracking-id" 
+                       placeholder="Tracking Id"
+                       style="flex: 1;
+                              padding: 18px 20px;
+                              font-size: 18px; 
+                              border: 2px solid #ddd;
+                              border-right: none;
+                              border-radius: 10px 0 0 10px;
+                              outline: none;
+                              background: rgba(255,255,255,0.85);
+                              backdrop-filter: blur(2px);
+                            ">
+
+                <button type="submit"
+                        style="background: #ffc107; 
+                               color: #000; 
+                               font-size: 18px; 
+                               font-weight: 600;
+                               padding: 0 25px;
+                               border: none;
+                               border-radius: 0 10px 10px 0;
+                               cursor: pointer;
+                               white-space: nowrap;">
+                    Track & Trace
+                </button>
+
+            </form>
+
+        </div> -->
+    </div>
+</div>
+
+    <!-- Header End -->
+
+<!-- Video section  -->
+
+<div class="video-section">
+
+<video autoplay muted loop playsinline>
+    <source src="/static/main/videos/Deep_Record.mp4" type="video/mp4">
+</video>
+
+
+<div class="video-overlay-content">
+
+    <h2 class="video-overlay-title">
+        Delivering Speed & Trust
+    </h2>
+
+    <p class="video-overlay-text">
+        Fast • Reliable • Nationwide Logistics
+    </p>
+
+</div>
+
+</div>
+ 
+<!-- Video section end -->
+ 
+<!-- Video section end -->
+ 
+<!-- Video section end -->
+
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0 about-image-col">
+                    
+                    <img 
+                    class="img-fluid w-100 img-card-shadow" 
+                    src="static/main/images/Home_about.jpeg" 
+                    alt=""
+                    >
+                </div>
+
+                <div class="col-lg-7">
+                    <h6 class="text-primary text-uppercase font-weight-bold">About Us</h6>
+                    <h1 class="mb-4">Trusted & Faster Logistics Service Provider</h1>
+                    <p class="mb-4">Deep Logistics traces its roots to a respected legacy in the construction sector of over 35 years. From this strong foundation of trust and quality, we have evolved into an independent, professionally managed logistics organization, committed to reliability, transparency, and excellence.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary mt-2 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-light my-5">
+        <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-5">
+                <img 
+                    class="img-fluid w-100 img-card-shadow" 
+                    src="static/main/images/Home_about1.jpg" 
+                    alt=""
+                >
+                </div>
+
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
+                    <h1 class="mb-4">Faster, Safe and Trusted Logistics Services</h1>
+                    <p class="mb-4">With a strong presence in Maharashtra, North India, and Chhattisgarh, and a modern fleet of over 250 vehicles, we cater to diverse customer segments with tailored strategies. Our technology-driven operations allow us to manage end-to-end logistics with precision.</p>
+                    <ul class="list-inline">
+                        <li><h6><i class="far fa-dot-circle text-primary me-3"></i>Best In Industry</h6></li>
+                        <li><h6><i class="far fa-dot-circle text-primary me-3"></i>Emergency Services</h6></li>
+                        <li><h6><i class="far fa-dot-circle text-primary me-3"></i>24/7 Customer Support</h6></li>
+                    </ul>
+                    <a href="{% url 'about' %}" class="btn btn-primary mt-3 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid" style="padding-top: 70px; background: white">
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center" style="margin-bottom: 40px;">
+            <h6 class="section-subheading">Our Services</h6>
+            <h1 class="section-heading">Best Logistics Services</h1>
+        </div>
+
+        <div class="row">
+
+            <!-- Service Card -->
+            <div class="col-lg-3 col-md-6 text-center mb-5">
+                <div class="service-card">
+                    <div class="service-card-icon-container gradient-air-cargo">
+                        <i class="fa fa-plane service-card-icon"></i>
+                        <h6 class="service-card-title">Air Cargo</h6>
+                    </div>
+                    <p class="service-card-text">
+                        Fast and secure air cargo for time-sensitive deliveries.
+                    </p>
+                    <a href="{% url 'service' %}" class="service-card-link">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Ocean Freight -->
+            <div class="col-lg-3 col-md-6 text-center mb-5">
+                <div class="service-card">
+                    <div class="service-card-icon-container gradient-train-cargo">
+                        <i class="fa fa-2x fa-train service-card-icon"></i>
+                        <h6 class="service-card-title">Train Cargo</h6>
+                    </div>
+                    <p class="service-card-text">
+                        Cost-effective train cargo solutions for bulk cargo.
+                    </p>
+                    <a href="{% url 'service' %}" class="service-card-link">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Land Transport -->
+            <div class="col-lg-3 col-md-6 text-center mb-5">
+                <div class="service-card">
+                    <div class="service-card-icon-container gradient-surface-transport">
+                        <i class="fa fa-truck service-card-icon"></i>
+                        <h6 class="service-card-title">Surface Transport</h6>
+                    </div>
+                    <p class="service-card-text">
+                        Reliable and efficient road transportation for FTL and PTL.
+                    </p>
+                    <a href="{% url 'service' %}" class="service-card-link">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cargo Storage -->
+            <div class="col-lg-3 col-md-6 text-center mb-5">
+                <div class="service-card">
+                    <div class="service-card-icon-container gradient-cargo-storage">
+                        <i class="fa fa-store service-card-icon"></i>
+                        <h6 class="service-card-title">Cargo Storage</h6>
+                    </div>
+                    <p class="service-card-text">
+                        Secure warehousing and distribution services.
+                    </p>
+                    <a href="{% url 'service' %}" class="service-card-link">
+                        Read More →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Services End -->
+
+    <!-- Note: Blog section from template is omitted as there is no blog functionality yet. -->
+
+{% endblock %}

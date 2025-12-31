@@ -1,0 +1,71 @@
+{
+  "Maharashtra": [
+    "Ahmednagar",
+    "Akluj",
+    "Amravati",
+    "Akola",
+    "Barshi",
+    "Baramati",
+    "Bhiwandi",
+    "Chandrapur",
+    "Indapur",
+    "Jalgaon",
+    "Kolhapur",
+    "Latur",
+    "Mumbai",
+    "Nanded",
+    "Pandharpur",
+    "Pune",
+    "Phaltan",
+    "Sangli",
+    "Sambhaji Nagar",
+    "Solapur Kondi",
+    "Solapur City",
+    "Satara City"
+  ],
+  "Chhattisgarh": [
+    "Raipur",
+    "Bilaspur",
+    "Bhilai",
+    "Durg"
+  ],
+  "Delhi": [
+    "Alipur",
+    "Naraina",
+    "Karol Bagh",
+    "Bawana",
+    "Mangolpuri",
+    "Gandhi Nagar",
+    "Shadara",
+    "Dayabasti",
+    "Kamla Market",
+    "Kashmere Gate",
+    "Sadar Bazar",
+    "Wazirpur"
+  ],
+  "Punjab": [
+    "Ludhiana"
+  ],
+  "Uttar Pradesh": [
+    "UP Border",
+    "Meerut",
+    "Noida",
+    "Ghaziabad",
+    "Phulkua"
+  ],
+  "Haryana": [
+    "Faridabad",
+    "Gurgaon",
+    "Panipath",
+    "Sonipat",
+    "Karnal"
+  ],
+  "Gujarat": [
+    "Rajkot",
+    "Shapar",
+    "Matoda",
+    "Jamnagar",
+    "Junagarh",
+    "Morbi"
+  ]
+}
